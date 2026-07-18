@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 
 import { LanguageContext } from "../../../contexts/LanguageContext";
@@ -15,9 +16,10 @@ function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <a href="#">{texts.header.home}</a>
-      <a href="#">About</a>
-      <a href="#">Contacto</a>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/classes">Classes</NavLink>
+      <NavLink to="/book">Book</NavLink>
     </nav>
   );
 }

@@ -12,19 +12,10 @@ function Header() {
     throw new Error("Navbar must be inside LanguageContext.Provider");
   }
 
-  const { setLanguage } = context;
-
-  function changeLanguage() {
-    setLanguage((prev) => {
-      return prev === "es" ? "en" : "es";
-    });
-  }
-
   return (
     <header className={styles.header}>
       <div></div>
       <Navbar />
-      <button onClick={changeLanguage}>hola</button>
     </header>
   );
 }
