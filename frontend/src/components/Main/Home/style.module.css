@@ -1,9 +1,9 @@
 .home {
 }
 
-.introductionSection {
+.introduction_section {
   max-width: 60%;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 100px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.catchphrase {
+.title {
   font-size: 100px;
   margin: 20px 0 0;
 }
@@ -25,51 +25,98 @@
   max-width: 90%;
 }
 
-.introductionButtonsSection {
+.buttons {
   display: flex;
   gap: 20px;
 }
 
-.introductionButton {
+.button {
   position: relative;
   overflow: hidden;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+  width: 200px;
+
   text-decoration: none;
   color: black;
   background: white;
+
   border: 2px solid black;
-  border-radius: 8px;
+  border-radius: 999px;
+
   cursor: pointer;
+  font-size: 24px;
+
   transition: color 0.35s ease;
   z-index: 0;
-  border-radius: 999px;
-  width: 200px;
-  font-size: 24px;
 }
 
-.introductionButton::before {
+.button::before {
   content: "";
   position: absolute;
   inset: 0;
+
   background: black;
   transform: translateX(-100%);
+
   transition: transform 0.35s ease;
   z-index: -1;
 }
 
-.introductionButton:hover::before {
+.button:hover::before {
   transform: translateX(0);
 }
 
-.introductionButton:hover {
+.button:hover {
   color: white;
 }
 
-.discoverText {
+.discover {
   position: absolute;
   bottom: 20px;
   font-size: 20px;
+}
+
+.why__container {
+  max-width: 60%;
+}
+
+.subtitle {
+  font-size: 60px;
+  margin: 20px 0 0;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.reason {
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.reason__title {
+  font-size: 24px;
+  margin: 10px 0 15px;
+  text-align: center;
+}
+
+.reason__description {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.process__container {
+  max-width: 60%;
 }
