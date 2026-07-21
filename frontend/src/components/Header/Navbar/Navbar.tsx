@@ -16,10 +16,10 @@ function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/classes">Classes</NavLink>
-      <NavLink to="/book">Book</NavLink>
+      <NavLink to="/">{texts.header.home}</NavLink>
+      <NavLink to="/about">{texts.header.about}</NavLink>
+      <NavLink to="/classes">{texts.header.classes}</NavLink>
+      <NavLink to="/book">{texts.header.book}</NavLink>
     </nav>
   );
 }

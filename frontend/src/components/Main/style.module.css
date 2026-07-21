@@ -1,4 +1,8 @@
 .main {
-  flex: 1;
-  padding: 0 10rem;
+  padding-inline: clamp(10px, 5vw, 10rem);
+}
+
+.main__content {
+  max-width: 1920px;
+  margin: auto;
 }

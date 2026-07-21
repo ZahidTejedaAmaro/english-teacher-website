@@ -1,5 +1,7 @@
 import styles from "./style.module.css";
 import Navbar from "./Navbar/Navbar";
+import mexicanFlag from "../../assets/icons/mexican-flag.svg";
+import usFlag from "../../assets/icons/us-flag.svg";
 
 import { useContext } from "react";
 
@@ -12,10 +14,30 @@ function Header() {
     throw new Error("Navbar must be inside LanguageContext.Provider");
   }
 
+  const { language, setLanguage } = context;
+
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "en" ? "es" : "en"));
+  };
+
   return (
     <header className={styles.header}>
-      <div></div>
-      <Navbar />
+      <div className={styles.header__container}>
+        <button
+          className={styles.button}
+          onClick={() =>
+            language === "es" ? setLanguage("en") : setLanguage("es")
+          }
+        >
+          <img
+            className={styles.flag}
+            src={language === "es" ? usFlag : mexicanFlag}
+            alt=""
+          />
+        </button>
+
+        <Navbar />
+      </div>
     </header>
   );
 }

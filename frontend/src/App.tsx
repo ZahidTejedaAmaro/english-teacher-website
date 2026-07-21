@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import { es } from "./locales/es";
 import { en } from "./locales/en";
 
+import styles from "./styles.module.css";
+
 function App() {
   const [language, setLanguage] = useState<"es" | "en">("es");
 
