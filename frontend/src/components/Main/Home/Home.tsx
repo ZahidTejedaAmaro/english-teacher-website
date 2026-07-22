@@ -2,7 +2,9 @@ import styles from "./style.module.css";
 import { Link } from "react-router-dom";
 import icon from "../../../../public/favicon.svg";
 import Testimonials from "./Testimonials/Testimonials";
-import FQA from "../FQA/FQA";
+import FAQ from "../FAQ/FAQ";
+import { es } from "../../../locales/faq/es";
+import { en } from "../../../locales/faq/en";
 
 import { useContext } from "react";
 
@@ -15,7 +17,9 @@ function Home() {
     throw new Error("Navbar must be inside Langu ageContext.Provider");
   }
 
-  const { texts } = context;
+  const { texts, language } = context;
+
+  const questions = language === "es" ? es.home : en.home;
 
   return (
     <section id="home" className={styles.home}>
@@ -37,8 +41,6 @@ function Home() {
             {texts.home.introduction.bookClass}
           </Link>
         </div>
-
-        {/* <p className={styles.discover}>{texts.home.introduction.discover}</p> */}
       </section>
 
       <section className={styles.section}>
@@ -84,6 +86,18 @@ function Home() {
 
             <p className={styles.reason__description}>
               {texts.home.why.reasons.practical.description}
+            </p>
+          </div>
+
+          <div className={styles.reason}>
+            <img className={styles.reason__icon} src={icon} alt="" />
+
+            <h4 className={styles.reason__title}>
+              {texts.home.why.reasons.progress.title}
+            </h4>
+
+            <p className={styles.reason__description}>
+              {texts.home.why.reasons.progress.description}
             </p>
           </div>
         </div>
@@ -177,12 +191,14 @@ function Home() {
 
       <section className={styles.section}>
         <div className={styles.container}>
-          <p className={styles.strapline}>{texts.home.faq.strapline}</p>
+          {/* <p className={styles.strapline}>{texts.home.faq.strapline}</p> */}
 
-          <h2 className={styles.subtitle}>{texts.home.faq.title}</h2>
+          <h2 className={`${styles.subtitle} ${styles.subtitle_questions}`}>
+            {texts.home.faq.title}
+          </h2>
         </div>
 
-        <FQA />
+        <FAQ questions={questions} />
       </section>
     </section>
   );

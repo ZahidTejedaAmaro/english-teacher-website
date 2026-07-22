@@ -25,13 +25,13 @@ export const en = {
 
       reasons: {
         personalized: {
-          title: "Personalized classes",
+          title: "Personalized Classes",
           description:
             "Every lesson is tailored to your goals, level, and learning style.",
         },
 
         pace: {
-          title: "Learn at your own pace",
+          title: "Learn at Your Own Pace",
           description:
             "Schedule lessons when it works for you and progress at a comfortable pace.",
         },
@@ -40,6 +40,12 @@ export const en = {
           title: "Practical English",
           description:
             "Learn English you can use in real conversations, travel, work, or everyday situations.",
+        },
+
+        progress: {
+          title: "Progress Tracking",
+          description:
+            "Receive continuous feedback to monitor your improvement and stay motivated throughout your learning journey.",
         },
       },
     },
@@ -60,7 +66,7 @@ export const en = {
 
     faq: {
       strapline: "FAQ",
-      title: "Frequently asked questions",
+      title: "Frequently Asked Questions",
     },
   },
 };

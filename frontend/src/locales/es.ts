@@ -41,6 +41,12 @@ export const es = {
           description:
             "Aprende inglés que puedes usar en conversaciones reales, viajes, trabajo o situaciones del día a día.",
         },
+
+        progress: {
+          title: "Seguimiento de tu progreso",
+          description:
+            "Recibe retroalimentación constante para identificar tus avances y continuar mejorando con confianza.",
+        },
       },
     },
 

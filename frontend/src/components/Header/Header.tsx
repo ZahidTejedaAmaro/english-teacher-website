@@ -16,10 +16,6 @@ function Header() {
 
   const { language, setLanguage } = context;
 
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "es" : "en"));
-  };
-
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>

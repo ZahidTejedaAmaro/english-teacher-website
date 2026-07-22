@@ -3,4 +3,9 @@
   display: flex;
   gap: 20px;
   font-size: 30px;
+  color: #ffffc5;
+}
+
+.nav a:hover {
+  color: #c9a84c;
 }
