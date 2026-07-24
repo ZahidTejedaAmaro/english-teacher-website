@@ -2,10 +2,55 @@
   font-weight: 700;
   display: flex;
   gap: 20px;
-  font-size: 30px;
+  font-size: 24px;
   color: #ffffc5;
 }
 
 .nav a:hover {
   color: #c9a84c;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    font-size: 22px;
+    /* font-size: clamp(26px, 2.5vw, 30px); */
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger__menu {
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    font-size: 28px;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    opacity: 0.3;
+  }
+
+  .hamburger__button {
+    cursor: pointer;
+  }
 }

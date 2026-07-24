@@ -3,7 +3,7 @@ export const es = {
     home: "INICIO",
     about: "SOBRE MÍ",
     classes: "CLASES",
-    book: "AGENDA UNA CLASE",
+    book: "RESERVAR CLASE",
   },
 
   home: {

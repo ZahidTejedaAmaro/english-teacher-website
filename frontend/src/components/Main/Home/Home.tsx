@@ -1,6 +1,10 @@
+import typography from "../../../styles/typography.module.css";
+
 import styles from "./style.module.css";
 import { Link } from "react-router-dom";
 import icon from "../../../../public/favicon.svg";
+import arrowIcon from "../../../assets/icons/arrow.svg";
+
 import Testimonials from "./Testimonials/Testimonials";
 import FAQ from "../FAQ/FAQ";
 import { es } from "../../../locales/faq/es";
@@ -14,7 +18,7 @@ function Home() {
   const context = useContext(LanguageContext);
 
   if (!context) {
-    throw new Error("Navbar must be inside Langu ageContext.Provider");
+    throw new Error("Navbar must be inside LanguageContext.Provider");
   }
 
   const { texts, language } = context;
@@ -23,12 +27,16 @@ function Home() {
 
   return (
     <section id="home" className={styles.home}>
-      <section className={`${styles.section} ${styles.section_introduction}`}>
-        <p className={styles.strapline}>{texts.home.introduction.strapline}</p>
+      <section
+        className={`${typography.section} ${typography.section_introduction}`}
+      >
+        <p className={typography.strapline}>
+          {texts.home.introduction.strapline}
+        </p>
 
-        <h1 className={styles.title}>{texts.home.introduction.title}</h1>
+        <h1 className={typography.title}>{texts.home.introduction.title}</h1>
 
-        <p className={styles.description}>
+        <p className={typography.description}>
           {texts.home.introduction.description}
         </p>
 
@@ -43,14 +51,14 @@ function Home() {
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={typography.section}>
         <div className={styles.container}>
-          <p className={styles.strapline}>{texts.home.why.strapline}</p>
+          <p className={typography.strapline}>{texts.home.why.strapline}</p>
 
-          <h2 className={styles.subtitle}>{texts.home.why.title}</h2>
+          <h2 className={typography.subtitle}>{texts.home.why.title}</h2>
         </div>
 
-        <p className={styles.description}>{texts.home.why.description}</p>
+        <p className={typography.description}>{texts.home.why.description}</p>
 
         <div className={styles.reasons}>
           <div className={styles.reason}>
@@ -103,18 +111,22 @@ function Home() {
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={typography.section}>
         <div className={styles.container}>
-          <p className={styles.strapline}>{texts.home.process.strapline}</p>
+          <p className={typography.strapline}>{texts.home.process.strapline}</p>
 
-          <h2 className={styles.subtitle}>{texts.home.process.title}</h2>
+          <h2 className={typography.subtitle}>{texts.home.process.title}</h2>
         </div>
 
-        <p className={styles.description}>{texts.home.process.description}</p>
+        <p className={typography.description}>
+          {texts.home.process.description}
+        </p>
 
         <div className={styles.process}>
           <div className={styles.process__step}>
-            <div className={styles.process__number}>1</div>
+            <div className={styles.process__number}>
+              <img className={styles.process__icon} src={icon} alt="" />
+            </div>
 
             <h3 className={styles.process__title}>Contact Me</h3>
 
@@ -122,11 +134,16 @@ function Home() {
               Tell me about your goals and availability.
             </p>
           </div>
-
-          <div className={styles.process__line}></div>
+          <img
+            src={arrowIcon}
+            className={`${styles.process__arrow} ${styles.process__arrow_active}`}
+          />
 
           <div className={styles.process__step}>
-            <div className={styles.process__number}>2</div>
+            <div className={styles.process__number}>
+              {" "}
+              <img className={styles.process__icon} src={icon} alt="" />
+            </div>
 
             <h3 className={styles.process__title}>Free Consultation</h3>
 
@@ -134,11 +151,16 @@ function Home() {
               We'll discuss your English level and objectives.
             </p>
           </div>
-
-          <div className={styles.process__line}></div>
+          <img
+            src={arrowIcon}
+            className={`${styles.process__arrow} ${styles.process__arrow_active}`}
+          />
 
           <div className={styles.process__step}>
-            <div className={styles.process__number}>3</div>
+            <div className={styles.process__number}>
+              {" "}
+              <img className={styles.process__icon} src={icon} alt="" />
+            </div>
 
             <h3 className={styles.process__title}>Learning Plan</h3>
 
@@ -147,10 +169,16 @@ function Home() {
             </p>
           </div>
 
-          <div className={styles.process__line}></div>
+          <img
+            src={arrowIcon}
+            className={`${styles.process__arrow} ${styles.process__arrow_active}`}
+          />
 
           <div className={styles.process__step}>
-            <div className={styles.process__number}>4</div>
+            <div className={styles.process__number}>
+              {" "}
+              <img className={styles.process__icon} src={icon} alt="" />
+            </div>
 
             <h3 className={styles.process__title}>Book Your Classes</h3>
 
@@ -158,42 +186,32 @@ function Home() {
               Choose the days and times that fit your schedule.
             </p>
           </div>
-
-          <div className={styles.process__line}></div>
-
-          <div className={styles.process__step}>
-            <div className={styles.process__number}>5</div>
-
-            <h3 className={styles.process__title}>Start Learning</h3>
-
-            <p className={styles.process__text}>
-              Begin improving your English with personalized lessons.
-            </p>
-          </div>
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={typography.section}>
         <div className={styles.container}>
-          <p className={styles.strapline}>
+          <p className={typography.strapline}>
             {texts.home.testimonials.strapline}
           </p>
 
-          <h2 className={styles.subtitle}>{texts.home.testimonials.title}</h2>
+          <h2 className={typography.subtitle}>
+            {texts.home.testimonials.title}
+          </h2>
         </div>
 
-        <p className={styles.description}>
+        <p className={typography.description}>
           {texts.home.testimonials.description}
         </p>
 
         <Testimonials />
       </section>
 
-      <section className={styles.section}>
+      <section className={typography.section}>
         <div className={styles.container}>
-          {/* <p className={styles.strapline}>{texts.home.faq.strapline}</p> */}
+          {/* <p className={typography.strapline}>{texts.home.faq.strapline}</p> */}
 
-          <h2 className={`${styles.subtitle} ${styles.subtitle_questions}`}>
+          <h2 className={`${typography.subtitle} ${styles.subtitle_questions}`}>
             {texts.home.faq.title}
           </h2>
         </div>
