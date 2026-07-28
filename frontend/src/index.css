@@ -1,3 +1,16 @@
+:root {
+  --header-height: 80px;
+  --max-width: 1400px;
+
+  /* background */
+  --color-background: #f8fafc;
+
+  /* Texto */
+  --color-text-strapline: #1d4ed8;
+  --color-text-title: #333333;
+  --color-text-description: #666666;
+}
+
 html {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
@@ -5,8 +18,8 @@ html {
 
 body {
   margin: 0;
-  background: #ffffff;
-  color: #333333;
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 a {

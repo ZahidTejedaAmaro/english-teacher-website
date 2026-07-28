@@ -106,6 +106,7 @@ export default function Testimonials() {
         modules={[Pagination, Autoplay]}
         centeredSlides
         loop
+        spaceBetween={30}
         autoplay={{
           delay: 8500,
           disableOnInteraction: true,
@@ -141,7 +142,7 @@ export default function Testimonials() {
                   className={styles.avatar}
                 />
 
-                <p>{testimonial.review}</p>
+                <p className={styles.description}>{testimonial.review}</p>
               </div>
 
               <span className={styles.name}>{testimonial.name}</span>

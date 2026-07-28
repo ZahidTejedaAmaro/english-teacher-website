@@ -1,5 +1,6 @@
 .header {
-  background-color: #000080;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -11,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
 
-  height: 80px;
+  height: var(--header-height);
 
   box-sizing: border-box;
   max-width: 1400px;

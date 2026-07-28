@@ -3,11 +3,11 @@
   display: flex;
   gap: 20px;
   font-size: 24px;
-  color: #ffffc5;
+  color: #334155;
 }
 
 .nav a:hover {
-  color: #c9a84c;
+  color: #1d4ed8;
 }
 
 .hamburger {

@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import expand from "../../../assets/icons/expand.svg";
+import expandIcon from "../../../assets/icons/expand.svg";
 
 import { useState } from "react";
 
@@ -18,9 +18,8 @@ function FAQ({ questions }: FAQProps) {
   return (
     <div className={styles.faq}>
       {questions.map((item, index) => (
-        <div className={styles.item}>
+        <div key={index} className={styles.item}>
           <button
-            key={index}
             onClick={() =>
               setActiveQuestion((prev) => (prev === index ? null : index))
             }
@@ -28,11 +27,15 @@ function FAQ({ questions }: FAQProps) {
           >
             <p className={styles.question}>{item.question}</p>
 
-            <img src={expand} alt="" />
+            <img src={expandIcon} alt="" />
 
-            {activeQuestion === index && (
-              <p className={styles.answer}>{item.answer}</p>
-            )}
+            <p
+              className={`${styles.answer} ${
+                activeQuestion === index ? styles.answer_open : ""
+              }`}
+            >
+              {item.answer}
+            </p>
           </button>
         </div>
       ))}

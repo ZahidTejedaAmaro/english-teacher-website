@@ -28,7 +28,7 @@ function Home() {
   return (
     <section id="home" className={styles.home}>
       <section
-        className={`${typography.section} ${typography.section_introduction}`}
+        className={`${typography.section} ${styles.section_introduction}`}
       >
         <p className={typography.strapline}>
           {texts.home.introduction.strapline}
@@ -45,13 +45,13 @@ function Home() {
             {texts.home.introduction.aboutClasses}
           </Link>
 
-          <Link to="/book" className={styles.button}>
+          <Link to="/book" className={`${styles.button} ${styles.button_book}`}>
             {texts.home.introduction.bookClass}
           </Link>
         </div>
       </section>
 
-      <section className={typography.section}>
+      <section className={`${typography.section} ${styles.section_scroll}`}>
         <div className={styles.container}>
           <p className={typography.strapline}>{texts.home.why.strapline}</p>
 
@@ -72,7 +72,6 @@ function Home() {
               {texts.home.why.reasons.personalized.description}
             </p>
           </div>
-
           <div className={styles.reason}>
             <img className={styles.reason__icon} src={icon} alt="" />
 
@@ -84,7 +83,6 @@ function Home() {
               {texts.home.why.reasons.pace.description}
             </p>
           </div>
-
           <div className={styles.reason}>
             <img className={styles.reason__icon} src={icon} alt="" />
 
@@ -96,7 +94,6 @@ function Home() {
               {texts.home.why.reasons.practical.description}
             </p>
           </div>
-
           <div className={styles.reason}>
             <img className={styles.reason__icon} src={icon} alt="" />
 
@@ -106,6 +103,28 @@ function Home() {
 
             <p className={styles.reason__description}>
               {texts.home.why.reasons.progress.description}
+            </p>
+          </div>{" "}
+          <div className={styles.reason}>
+            <img className={styles.reason__icon} src={icon} alt="" />
+
+            <h4 className={styles.reason__title}>
+              {texts.home.why.reasons.exams.title}
+            </h4>
+
+            <p className={styles.reason__description}>
+              {texts.home.why.reasons.exams.description}
+            </p>
+          </div>
+          <div className={styles.reason}>
+            <img className={styles.reason__icon} src={icon} alt="" />
+
+            <h4 className={styles.reason__title}>
+              {texts.home.why.reasons.confidence.title}
+            </h4>
+
+            <p className={styles.reason__description}>
+              {texts.home.why.reasons.confidence.description}
             </p>
           </div>
         </div>
@@ -124,9 +143,7 @@ function Home() {
 
         <div className={styles.process}>
           <div className={styles.process__step}>
-            <div className={styles.process__number}>
-              <img className={styles.process__icon} src={icon} alt="" />
-            </div>
+            <div className={styles.process__number}>01</div>
 
             <h3 className={styles.process__title}>Contact Me</h3>
 
@@ -134,16 +151,15 @@ function Home() {
               Tell me about your goals and availability.
             </p>
           </div>
+
           <img
             src={arrowIcon}
             className={`${styles.process__arrow} ${styles.process__arrow_active}`}
+            alt=""
           />
 
           <div className={styles.process__step}>
-            <div className={styles.process__number}>
-              {" "}
-              <img className={styles.process__icon} src={icon} alt="" />
-            </div>
+            <div className={styles.process__number}>02</div>
 
             <h3 className={styles.process__title}>Free Consultation</h3>
 
@@ -151,16 +167,15 @@ function Home() {
               We'll discuss your English level and objectives.
             </p>
           </div>
+
           <img
             src={arrowIcon}
             className={`${styles.process__arrow} ${styles.process__arrow_active}`}
+            alt=""
           />
 
           <div className={styles.process__step}>
-            <div className={styles.process__number}>
-              {" "}
-              <img className={styles.process__icon} src={icon} alt="" />
-            </div>
+            <div className={styles.process__number}>03</div>
 
             <h3 className={styles.process__title}>Learning Plan</h3>
 
@@ -172,13 +187,11 @@ function Home() {
           <img
             src={arrowIcon}
             className={`${styles.process__arrow} ${styles.process__arrow_active}`}
+            alt=""
           />
 
           <div className={styles.process__step}>
-            <div className={styles.process__number}>
-              {" "}
-              <img className={styles.process__icon} src={icon} alt="" />
-            </div>
+            <div className={styles.process__number}>04</div>
 
             <h3 className={styles.process__title}>Book Your Classes</h3>
 

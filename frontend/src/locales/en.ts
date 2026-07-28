@@ -47,6 +47,17 @@ export const en = {
           description:
             "Receive continuous feedback to monitor your improvement and stay motivated throughout your learning journey.",
         },
+        exams: {
+          title: "Exam Preparation",
+          description:
+            "Improve your English skills with focused practice and strategies to help you achieve your academic or professional goals.",
+        },
+
+        confidence: {
+          title: "Communication Confidence",
+          description:
+            "Build the confidence you need to express yourself in English more fluently during real conversations.",
+        },
       },
     },
 
@@ -67,6 +78,40 @@ export const en = {
     faq: {
       strapline: "FAQ",
       title: "Frequently Asked Questions",
+    },
+  },
+  classes: {
+    students: {
+      kids: {
+        title: "Niños",
+        description:
+          "Clases dinámicas y divertidas diseñadas para que los niños desarrollen confianza al aprender inglés mediante juegos, actividades interactivas y práctica constante.",
+      },
+      teenagers: {
+        title: "Adolescentes",
+        description:
+          "Lecciones enfocadas en mejorar las habilidades de comunicación, apoyar el rendimiento escolar y fortalecer la confianza para utilizar el inglés en situaciones reales.",
+      },
+      adults: {
+        title: "Adultos",
+        description:
+          "Clases personalizadas para adultos que desean aprender inglés por motivos personales, académicos o profesionales, adaptadas a su nivel y objetivos.",
+      },
+      exams: {
+        title: "Preparación para exámenes",
+        description:
+          "Sesiones orientadas a desarrollar las estrategias y habilidades necesarias para obtener mejores resultados en exámenes de certificación o evaluaciones académicas.",
+      },
+      business: {
+        title: "Inglés de negocios",
+        description:
+          "Clases enfocadas en el entorno profesional, incluyendo reuniones, presentaciones, correos electrónicos, entrevistas y comunicación efectiva en el trabajo.",
+      },
+      travel: {
+        title: "Inglés para viajar",
+        description:
+          "Aprende el inglés esencial para viajar con confianza, desde reservar un hotel y pedir indicaciones hasta comunicarte en aeropuertos, restaurantes y otros lugares turísticos.",
+      },
     },
   },
 };

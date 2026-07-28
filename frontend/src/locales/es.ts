@@ -47,6 +47,17 @@ export const es = {
           description:
             "Recibe retroalimentación constante para identificar tus avances y continuar mejorando con confianza.",
         },
+        exams: {
+          title: "Preparación para exámenes",
+          description:
+            "Mejora tus habilidades de inglés con estrategias y práctica enfocada para alcanzar tus objetivos académicos o profesionales.",
+        },
+
+        confidence: {
+          title: "Confianza al comunicarte",
+          description:
+            "Desarrolla la seguridad necesaria para expresarte en inglés con mayor fluidez en conversaciones reales.",
+        },
       },
     },
 
@@ -67,6 +78,40 @@ export const es = {
     faq: {
       strapline: "Preguntas frecuentes",
       title: "Preguntas más frecuentes",
+    },
+  },
+  classes: {
+    students: {
+      kids: {
+        title: "Kids",
+        description:
+          "Fun and engaging lessons designed to help children build confidence in English through games, interactive activities, and consistent practice.",
+      },
+      teenagers: {
+        title: "Teenagers",
+        description:
+          "Lessons focused on improving communication skills, supporting school performance, and building confidence to use English in real-life situations.",
+      },
+      adults: {
+        title: "Adults",
+        description:
+          "Personalized lessons for adults who want to learn English for personal, academic, or professional purposes, tailored to their level and goals.",
+      },
+      exams: {
+        title: "Exam Preparation",
+        description:
+          "Sessions designed to develop the strategies and language skills needed to achieve better results in certification exams and academic assessments.",
+      },
+      business: {
+        title: "Business English",
+        description:
+          "Lessons focused on professional communication, including meetings, presentations, emails, interviews, and workplace interactions.",
+      },
+      travel: {
+        title: "Travel English",
+        description:
+          "Learn the essential English you need to travel with confidence, from booking hotels and asking for directions to communicating at airports, restaurants, and tourist attractions.",
+      },
     },
   },
 };
