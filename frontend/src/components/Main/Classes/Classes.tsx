@@ -3,8 +3,13 @@ import typography from "../../../styles/typography.module.css";
 
 import { useState, useEffect } from "react";
 
-import { es } from "../../../locales/es";
-import { en } from "../../../locales/en";
+// import { es } from "../../../locales/es";
+// import { en } from "../../../locales/en";
+
+import { esQuestions } from "../../../locales/faq/es";
+import { enQuestions } from "../../../locales/faq/en";
+
+import FAQ from "../FAQ/FAQ";
 
 import { useContext } from "react";
 
@@ -22,6 +27,7 @@ function Classes() {
   // const text = language === "es" ? es.classes : en.classes;
 
   // const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
+  const questions = language === "es" ? esQuestions.home : enQuestions.home;
 
   const [selectedStudent, setSelectedStudent] = useState<
     keyof typeof texts.classes.students | null
@@ -126,19 +132,97 @@ function Classes() {
 
           <div className={styles.methodologies}>
             <div className={styles.methodology}>
-              <p></p>
+              <h3 className={styles.methodology__title}>
+                Conversational Practice
+              </h3>
+              <p className={styles.methodology__description}>
+                Build confidence through real-life conversations, role-playing,
+                and interactive speaking activities.
+              </p>
             </div>
+
             <div className={styles.methodology}>
-              <p></p>
+              <h3 className={styles.methodology__title}>
+                Personalized Learning
+              </h3>
+              <p className={styles.methodology__description}>
+                Lessons are adapted to your goals, interests, and current
+                English level to maximize your progress.
+              </p>
             </div>
+
             <div className={styles.methodology}>
-              <p></p>
+              <h3 className={styles.methodology__title}>
+                Practical Activities
+              </h3>
+              <p className={styles.methodology__description}>
+                Practice with exercises based on everyday situations, travel,
+                work, and common communication scenarios.
+              </p>
             </div>
+
             <div className={styles.methodology}>
-              <p></p>
+              <h3 className={styles.methodology__title}>Continuous Feedback</h3>
+              <p className={styles.methodology__description}>
+                Receive regular feedback and guidance to identify your strengths
+                and improve step by step.
+              </p>
             </div>
           </div>
         </section>
+        <section className={typography.section}>
+          <div className={styles.container}>
+            <p className={typography.strapline}>Learning outcomes.</p>
+
+            <h2 className={typography.subtitle}>What will you learn?</h2>
+          </div>
+
+          <p className={typography.description}>
+            Develop the English skills you need to communicate confidently in
+            everyday, academic, and professional situations through practical
+            and personalized lessons.
+          </p>
+
+          <div className={styles.skills}>
+            <div className={styles.skill}>
+              <h3 className={styles.skill__title}>Speaking</h3>
+
+              <p className={styles.skill__description}>
+                Build confidence by practicing real conversations,
+                pronunciation, and everyday communication.
+              </p>
+            </div>
+
+            <div className={styles.skill}>
+              <h3 className={styles.skill__title}>Listening</h3>
+
+              <p className={styles.skill__description}>
+                Improve your understanding of native speakers through
+                conversations, videos, and practical listening exercises.
+              </p>
+            </div>
+
+            <div className={styles.skill}>
+              <h3 className={styles.skill__title}>Reading</h3>
+
+              <p className={styles.skill__description}>
+                Read articles, stories, and professional content while expanding
+                your vocabulary and comprehension.
+              </p>
+            </div>
+
+            <div className={styles.skill}>
+              <h3 className={styles.skill__title}>Writing</h3>
+
+              <p className={styles.skill__description}>
+                Learn to write emails, messages, essays, and other texts with
+                greater accuracy and confidence.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <FAQ questions={questions} />
       </section>
 
       {selectedStudent && (

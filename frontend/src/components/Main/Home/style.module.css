@@ -92,24 +92,24 @@
 .reasons {
   display: grid;
   margin: auto;
-  width: 85%;
+  /* width: 85%; */
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 
   margin-top: clamp(30px, 4vw, 50px);
 
-  overflow: hidden;
-  border-radius: 20px;
-  border: 1px solid #eaf2f8;
+  /* overflow: hidden; */
+  /* border-radius: 20px; */
+  /* border: 1px solid #eaf2f8; */
   /* box-shadow: 1px 1px 5px; */
 }
 
 .reason {
   display: flex;
   flex-direction: column;
-
+  border-radius: 20px;
   padding: 20px;
   border: 1px solid #eaf2f8;
-
   background-color: #ffffff;
 }
 
@@ -125,9 +125,10 @@
 .reason__title {
   display: flex;
   align-items: center;
-  min-height: clamp(35px, 3vw, 50px);
+  /* min-height: clamp(35px, 3vw, 50px); */
   font-weight: 500;
   text-align: left;
+  height: 40px;
   margin: 0;
   margin-top: 30px;
   font-size: clamp(18px, 1.4vw, 30px);

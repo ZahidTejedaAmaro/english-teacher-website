@@ -7,8 +7,8 @@ import arrowIcon from "../../../assets/icons/arrow.svg";
 
 import Testimonials from "./Testimonials/Testimonials";
 import FAQ from "../FAQ/FAQ";
-import { es } from "../../../locales/faq/es";
-import { en } from "../../../locales/faq/en";
+import { esQuestions } from "../../../locales/faq/es";
+import { enQuestions } from "../../../locales/faq/en";
 
 import { useContext } from "react";
 
@@ -23,7 +23,7 @@ function Home() {
 
   const { texts, language } = context;
 
-  const questions = language === "es" ? es.home : en.home;
+  const questions = language === "es" ? esQuestions.home : enQuestions.home;
 
   return (
     <section id="home" className={styles.home}>
