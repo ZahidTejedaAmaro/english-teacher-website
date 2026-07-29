@@ -3,7 +3,7 @@
   display: flex;
   gap: 20px;
   font-size: 24px;
-  color: #334155;
+  color: var(--color-text-description);
 }
 
 .nav a:hover {
