@@ -1,13 +1,13 @@
 .nav {
   font-weight: 700;
   display: flex;
-  gap: 20px;
-  font-size: 24px;
-  color: var(--color-text-description);
+  gap: var(--space-xl);
+  font-size: var(--font-xl);
+  color: var(--text-tertiary);
 }
 
 .nav a:hover {
-  color: #1d4ed8;
+  color: var(--color-accent);
 }
 
 .hamburger {

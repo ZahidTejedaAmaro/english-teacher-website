@@ -1,8 +1,20 @@
 .main {
-  padding-inline: clamp(10px, 5vw, 10rem);
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-primary);
+  padding: 0 16px;
 }
 
 .main__content {
-  max-width: 1400px;
-  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+
+@media screen and (max-width: 800px) {
+  .main__content {
+    gap: 64px;
+  }
 }

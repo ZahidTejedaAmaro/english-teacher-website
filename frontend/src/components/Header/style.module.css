@@ -1,22 +1,18 @@
 .header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e2e8f0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding-inline: clamp(10px, 5vw, 10rem);
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  height: var(--header-height);
-
   box-sizing: border-box;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
+  height: 80px;
+  background-color: var(--background-secondary);
 }
 
 .button {
@@ -26,7 +22,7 @@
 }
 
 .flag {
-  width: 50px;
+  width: 66px;
 }
 
 @media screen and (max-width: 1000px) {

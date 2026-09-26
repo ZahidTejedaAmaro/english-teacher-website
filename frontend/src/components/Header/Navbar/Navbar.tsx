@@ -8,7 +8,7 @@ import styles from "./style.module.css";
 import hamburgerIcon from "../../../assets/icons/hamburguer.svg";
 
 function Navbar() {
-  const [isHamburger, setIsHamburger] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const context = useContext(LanguageContext);
 
@@ -18,21 +18,23 @@ function Navbar() {
 
   const { texts } = context;
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   const links = (
     <>
-      <NavLink to="/" onClick={() => setIsHamburger(false)}>
+      <NavLink to="/" onClick={closeMenu} className={styles.nav__link}>
         {texts.header.home}
       </NavLink>
 
-      <NavLink to="/about" onClick={() => setIsHamburger(false)}>
+      <NavLink to="/about" onClick={closeMenu} className={styles.nav__link}>
         {texts.header.about}
       </NavLink>
 
-      <NavLink to="/classes" onClick={() => setIsHamburger(false)}>
+      <NavLink to="/classes" onClick={closeMenu} className={styles.nav__link}>
         {texts.header.classes}
       </NavLink>
 
-      <NavLink to="/book" onClick={() => setIsHamburger(false)}>
+      <NavLink to="/book" onClick={closeMenu} className={styles.nav__link}>
         {texts.header.book}
       </NavLink>
     </>
@@ -45,13 +47,14 @@ function Navbar() {
       <nav className={styles.hamburger}>
         <button
           className={styles.hamburger__button}
-          onClick={() => setIsHamburger((prev) => !prev)}
+          onClick={() => setIsMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
         >
           <img src={hamburgerIcon} alt="" />
         </button>
 
-        {isHamburger && <div className={styles.hamburger__menu}>{links}</div>}
+        {isMenuOpen && <div className={styles.hamburger__menu}>{links}</div>}
       </nav>
     </>
   );

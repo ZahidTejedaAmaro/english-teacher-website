@@ -15,14 +15,14 @@
 .strapline {
   font-size: 28px;
   margin: 0;
-  color: var(--color-text-strapline);
+  color: var(--color-accent);
   font-weight: 600;
 }
 
 .title {
   margin: var(--spacing-s);
   font-size: clamp(var(--font-xl), 6.5vw, var(--font-2xl));
-  color: var(--color-text-title);
+  color: var(--color-text-primary);
   max-width: 80%;
 }
 
@@ -30,7 +30,7 @@
   max-width: 70%;
   font-size: clamp(20px, 3.5vw, 32px);
   margin: 0;
-  color: var(--color-text-description);
+  color: var(--color-text-secondary);
   font-weight: 600;
 }
 
