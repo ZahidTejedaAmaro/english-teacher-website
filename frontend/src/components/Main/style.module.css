@@ -18,3 +18,13 @@
     gap: 64px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding: 0 8px;
+  }
+
+  .main__content {
+    gap: 32px;
+  }
+}

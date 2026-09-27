@@ -1,117 +1,124 @@
 export const en = {
   header: {
     home: "HOME",
-    about: "ABOUT",
+    about: "ABOUT ME",
     classes: "CLASSES",
     book: "BOOK A CLASS",
   },
 
   home: {
-    introduction: {
-      strapline: "Personalized English Classes",
+    hero: {
+      eyebrow: "Personalized English Classes",
       title: "Learn English with Confidence. Speak with Purpose.",
       description:
-        "Build real-world English skills through personalized lessons designed around your goals, your schedule, and your learning pace.",
+        "Develop real-world English skills through personalized classes designed around your goals, your schedule, and your learning pace.",
       aboutClasses: "About our classes",
       bookClass: "Book a class",
-      discover: "Discover more",
+      scroll: "DISCOVER MORE",
     },
 
-    why: {
-      strapline: "Why learn with me",
-      title: "What do I offer?",
+    fact: {
+      title: "Learning English helps",
       description:
-        "Every lesson is designed around your goals, your schedule, and practical English you can use every day.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget convallis mi. Aenean tristique lectus eu tincidunt lobortis.",
+      ctaText: "Ready to get started?",
+      ctaButton: "Book a class",
+    },
 
-      reasons: {
-        personalized: {
-          title: "Personalized Classes",
+    students: {
+      eyebrow: "FIND YOUR CLASS",
+      title: "Classes for everyone",
+      description:
+        "No two students are the same. I understand that every student has their own needs and goals. That's why I offer flexible classes adapted to different learning styles, needs, and goals.",
+    },
+
+    benefits: {
+      eyebrow: "FIND YOUR CLASS",
+      title: "Classes for everyone",
+      description:
+        "No two students are the same. I understand that every student has their own needs and goals. That's why I offer flexible classes adapted to different learning styles, needs, and goals.",
+      items: [
+        {
+          title: "Personalized Learning",
           description:
-            "Every lesson is tailored to your goals, level, and learning style.",
+            "Every student is unique. I design lessons that adapt to each student's age, goals, learning style, and pace to ensure meaningful progress.",
         },
-
-        pace: {
+        {
           title: "Learn at Your Own Pace",
           description:
-            "Schedule lessons when it works for you and progress at a comfortable pace.",
+            "Every student is unique. I design lessons that adapt to each student's age, goals, learning style, and pace to ensure meaningful progress.",
         },
-
-        practical: {
+        {
           title: "Practical English",
           description:
-            "Learn English you can use in real conversations, travel, work, or everyday situations.",
+            "Every student is unique. I design lessons that adapt to each student's age, goals, learning style, and pace to ensure meaningful progress.",
         },
-
-        progress: {
-          title: "Progress Tracking",
+        {
+          title: "Track Your Progress",
           description:
-            "Receive continuous feedback to monitor your improvement and stay motivated throughout your learning journey.",
+            "Every student is unique. I design lessons that adapt to each student's age, goals, learning style, and pace to ensure meaningful progress.",
         },
-        exams: {
+        {
           title: "Exam Preparation",
           description:
-            "Improve your English skills with focused practice and strategies to help you achieve your academic or professional goals.",
+            "Every student is unique. I design lessons that adapt to each student's age, goals, learning style, and pace to ensure meaningful progress.",
         },
-
-        confidence: {
-          title: "Communication Confidence",
+        {
+          title: "Confidence When Communicating",
           description:
-            "Build the confidence you need to express yourself in English more fluently during real conversations.",
+            "Every student is unique. I design lessons that adapt to each student's age, goals, learning style, and pace to ensure meaningful progress.",
         },
-      },
+      ],
+      cta: "Explore classes →",
     },
 
-    process: {
-      strapline: "How to start",
-      title: "Getting started is as easy as 1-2-3.",
+    stats: {
+      title: "What do I offer?",
       description:
-        "Starting something new can sometimes feel overwhelming. That's why getting started is as easy as pie.",
+        "Every lesson is designed around your goals, your schedule, and practical English that you can use every day.",
+      items: [
+        { title: "100%", desciption: "COMMITTED TO YOUR SUCCESS" },
+        { title: "100%", desciption: "COMMITTED TO YOUR SUCCESS" },
+        { title: "100%", desciption: "COMMITTED TO YOUR SUCCESS" },
+        { title: "100%", desciption: "COMMITTED TO YOUR SUCCESS" },
+      ],
     },
 
     testimonials: {
-      strapline: "Real Stories",
-      title: "Hear it from my students",
-      description:
-        "Every learning journey is different, but the goal is the same: gaining confidence in English. Here's what some of my current and former students have to say about their experience.",
-    },
-
-    faq: {
-      strapline: "FAQ",
-      title: "Frequently Asked Questions",
-    },
-  },
-  classes: {
-    students: {
-      kids: {
-        title: "Niños",
-        description:
-          "Clases dinámicas y divertidas diseñadas para que los niños desarrollen confianza al aprender inglés mediante juegos, actividades interactivas y práctica constante.",
-      },
-      teenagers: {
-        title: "Adolescentes",
-        description:
-          "Lecciones enfocadas en mejorar las habilidades de comunicación, apoyar el rendimiento escolar y fortalecer la confianza para utilizar el inglés en situaciones reales.",
-      },
-      adults: {
-        title: "Adultos",
-        description:
-          "Clases personalizadas para adultos que desean aprender inglés por motivos personales, académicos o profesionales, adaptadas a su nivel y objetivos.",
-      },
-      exams: {
-        title: "Preparación para exámenes",
-        description:
-          "Sesiones orientadas a desarrollar las estrategias y habilidades necesarias para obtener mejores resultados en exámenes de certificación o evaluaciones académicas.",
-      },
-      business: {
-        title: "Inglés de negocios",
-        description:
-          "Clases enfocadas en el entorno profesional, incluyendo reuniones, presentaciones, correos electrónicos, entrevistas y comunicación efectiva en el trabajo.",
-      },
-      travel: {
-        title: "Inglés para viajar",
-        description:
-          "Aprende el inglés esencial para viajar con confianza, desde reservar un hotel y pedir indicaciones hasta comunicarte en aeropuertos, restaurantes y otros lugares turísticos.",
-      },
+      eyebrow: "TESTIMONIALS",
+      title: "What my students say",
+      items: [
+        {
+          name: "John",
+          occupation: "Software Developer",
+          testimony:
+            "Great Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh.!",
+        },
+        {
+          name: "Sarah",
+          occupation: "Marketing Manager",
+          testimony:
+            "I Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. my English a lot.",
+        },
+        {
+          name: "Mike",
+          occupation: "University Student",
+          testimony:
+            "Very Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. lessons.",
+        },
+        {
+          name: "Emma",
+          occupation: "Business Consultant",
+          testimony:
+            "I feel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. more confident speaking English.",
+        },
+        {
+          name: "David",
+          occupation: "High School Teacher",
+          testimony:
+            "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. are engaging and personalized.",
+        },
+      ],
     },
   },
 };
