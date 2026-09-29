@@ -1,10 +1,17 @@
 import typography from "../../../styles/typography.module.css";
+
 import { useState } from "react";
+
 import CTA from "./CTA/CTA";
 
+import SectionHeader from "./SectionHeader/SectionHeader";
+
 import styles from "./style.module.css";
+
 import { Link } from "react-router-dom";
+
 import icon from "../../../../public/favicon.svg";
+
 import scrollArrow from "../../../assets/icons/scrollArrow.svg";
 
 import { useContext } from "react";
@@ -12,13 +19,19 @@ import { useContext } from "react";
 import { LanguageContext } from "../../../contexts/LanguageContext";
 
 import kidsImage from "../../../assets/images/studentsSection/kids.jpg";
+
 import adultsImage from "../../../assets/images/studentsSection/adults.jpg";
+
 import teenagersImage from "../../../assets/images/studentsSection/teenagers.jpg";
+
 import businessImage from "../../../assets/images/studentsSection/business.jpg";
+
 import examsImage from "../../../assets/images/studentsSection/exams.jpg";
+
 import travelImage from "../../../assets/images/studentsSection/travel.jpg";
 
 import rightArrowIcon from "../../../assets/icons/rightArrowIcon.svg";
+
 import leftArrowIcon from "../../../assets/icons/leftArrowIcon.svg";
 
 // const students = [
@@ -95,6 +108,7 @@ import leftArrowIcon from "../../../assets/icons/leftArrowIcon.svg";
 
 function Home() {
   // const [activeCard, setActiveCard] = useState<number | null>(null);
+
   const [activeTestimony, setActiveTestimony] = useState<number>(0);
 
   const context = useContext(LanguageContext);
@@ -106,6 +120,7 @@ function Home() {
   const { texts, language } = context;
 
   const { home } = texts;
+
   const { hero, fact, students, benefits, stats, testimonials } = home;
 
   const testimonialPhotos = [
@@ -145,6 +160,7 @@ function Home() {
 
         <p className={styles.heroScrollText}>
           {hero.scroll}
+
           <img src={scrollArrow} className={styles.heroArrow} alt="" />
         </p>
       </section>
@@ -166,43 +182,43 @@ function Home() {
       </div>
 
       <section className={styles.studentsSection}>
-        <p className={styles.sectionEyebrow}>{students.eyebrow}</p>
-
-        <h2 className={styles.sectionTitle}>{students.title}</h2>
-
-        <p className={styles.sectionDescription}>{students.description}</p>
+        <SectionHeader
+          eyebrow={students.eyebrow}
+          title={students.title}
+          description={students.description}
+        />
 
         {/* <div className={styles.studentsGrid}>
-    {students.map((student, index) => (
-      <div
-        className={`${styles.studentItem} ${
-          activeCard === index ? styles.studentItemActive : ""
-        }`}
-        key={student.title}
-        onClick={() => setActiveCard(activeCard === index ? null : index)}
-        style={{ backgroundImage: `url(${student.backgroundImage})` }}
-      >
-        <div className={styles.studentItemPreview}>
-          <p className={styles.studentItemPreviewTitle}>
-            {student.title}
-          </p>
-        </div>
+          {students.map((student, index) => (
+            <div
+              className={`${styles.studentItem} ${
+                activeCard === index ? styles.studentItemActive : ""
+              }`}
+              key={student.title}
+              onClick={() => setActiveCard(activeCard === index ? null : index)}
+              style={{ backgroundImage: `url(${student.backgroundImage})` }}
+            >
+              <div className={styles.studentItemPreview}>
+                <p className={styles.studentItemPreviewTitle}>
+                  {student.title}
+                </p>
+              </div>
 
-        <div className={styles.studentItemExpanded}>
-          <p>{student.title}</p>
-          <p>{student.description}</p>
-        </div>
-      </div>
-    ))}
-  </div> */}
+              <div className={styles.studentItemExpanded}>
+                <p>{student.title}</p>
+                <p>{student.description}</p>
+              </div>
+            </div>
+          ))}
+        </div> */}
       </section>
 
       <section className={styles.benefitsSection}>
-        <p className={styles.sectionEyebrow}>{benefits.eyebrow}</p>
-
-        <h2 className={styles.sectionTitle}>{benefits.title}</h2>
-
-        <p className={styles.sectionDescription}>{benefits.description}</p>
+        <SectionHeader
+          eyebrow={benefits.eyebrow}
+          title={benefits.title}
+          description={benefits.description}
+        />
 
         <div className={styles.benefitsGrid}>
           {benefits.items.map((benefit) => (
@@ -224,8 +240,8 @@ function Home() {
       <div className={styles.statsContainer}>
         {stats.items.map((stat) => (
           <div className={styles.statItem}>
-            <p className={styles.statTitle}>100%</p>
-            <p className={styles.statDescription}>COMMITED TO YOUR SUCCESS</p>
+            <p className={styles.statTitle}>{stat.title}</p>
+            <p className={styles.statDescription}>{stat.description}</p>
           </div>
         ))}
       </div>

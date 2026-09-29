@@ -77,10 +77,10 @@ export const en = {
       description:
         "Every lesson is designed around your goals, your schedule, and practical English that you can use every day.",
       items: [
-        { title: "100%", desciption: "COMMITTED TO YOUR SUCCESS" },
-        { title: "100%", desciption: "COMMITTED TO YOUR SUCCESS" },
-        { title: "100%", desciption: "COMMITTED TO YOUR SUCCESS" },
-        { title: "100%", desciption: "COMMITTED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITTED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITTED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITTED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITTED TO YOUR SUCCESS" },
       ],
     },
 

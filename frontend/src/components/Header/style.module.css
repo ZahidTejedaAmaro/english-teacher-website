@@ -5,6 +5,7 @@
 }
 
 .header__container {
+  padding: 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,11 +23,11 @@
 }
 
 .flag {
-  width: 66px;
+  width: 60px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
   .flag {
-    width: 40px;
+    width: 50px;
   }
 }

@@ -22,19 +22,19 @@ function Navbar() {
 
   const links = (
     <>
-      <NavLink to="/" onClick={closeMenu} className={styles.nav__link}>
+      <NavLink to="/" onClick={closeMenu} className={styles.navLink}>
         {texts.header.home}
       </NavLink>
 
-      <NavLink to="/about" onClick={closeMenu} className={styles.nav__link}>
+      <NavLink to="/about" onClick={closeMenu} className={styles.navLink}>
         {texts.header.about}
       </NavLink>
 
-      <NavLink to="/classes" onClick={closeMenu} className={styles.nav__link}>
+      <NavLink to="/classes" onClick={closeMenu} className={styles.navLink}>
         {texts.header.classes}
       </NavLink>
 
-      <NavLink to="/book" onClick={closeMenu} className={styles.nav__link}>
+      <NavLink to="/book" onClick={closeMenu} className={styles.navLink}>
         {texts.header.book}
       </NavLink>
     </>
@@ -42,11 +42,11 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`${styles.nav} ${styles.nav_hide}`}>{links}</nav>
+      <nav className={`${styles.nav} ${styles.navHide}`}>{links}</nav>
 
-      <nav className={styles.hamburger}>
+      <nav className={styles.navbarMobile}>
         <button
-          className={styles.hamburger__button}
+          className={styles.navbarMenuButton}
           onClick={() => setIsMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation menu"
           aria-expanded={isMenuOpen}
@@ -54,7 +54,13 @@ function Navbar() {
           <img src={hamburgerIcon} alt="" />
         </button>
 
-        {isMenuOpen && <div className={styles.hamburger__menu}>{links}</div>}
+        {isMenuOpen && (
+          <>
+            <div className={styles.navbarOverlay} onClick={closeMenu} />
+
+            <div className={styles.navbarMenu}>{links}</div>
+          </>
+        )}
       </nav>
     </>
   );

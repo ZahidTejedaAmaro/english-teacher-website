@@ -75,10 +75,10 @@ export const es = {
       description:
         "Cada lección está diseñada alrededor de tus objetivos, tu horario y un inglés práctico que puedes usar todos los días.",
       items: [
-        { title: "100%", desciption: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", desciption: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", desciption: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", desciption: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
       ],
     },
 
