@@ -34,80 +34,8 @@ import rightArrowIcon from "../../../assets/icons/rightArrowIcon.svg";
 
 import leftArrowIcon from "../../../assets/icons/leftArrowIcon.svg";
 
-// const students = [
-//   {
-//     title: "Kids",
-//     description: "Fun and engaging English lessons for young learners.",
-//     backgroundImage: kidsImage,
-//   },
-//   {
-//     title: "Teenagers",
-//     description: "Build confidence and communication skills.",
-//     backgroundImage: teenagersImage,
-//   },
-//   {
-//     title: "Adults",
-//     description: "Practical English lessons adapted to your goals.",
-//     backgroundImage: adultsImage,
-//   },
-//   {
-//     title: "Exams",
-//     description:
-//       "Improve your English for teaching and professional communication.",
-//     backgroundImage: examsImage,
-//   },
-//   {
-//     title: "Business",
-//     description: "Build a strong foundation in English.",
-//     backgroundImage: businessImage,
-//   },
-//   {
-//     title: "Travel",
-//     description: "Refine your fluency and communicate more naturally.",
-//     backgroundImage: travelImage,
-//   },
-// ];
-
-// const testimonials = [
-//   {
-//     name: "John",
-//     occupation: "Software Developer",
-//     testimony:
-//       "Great Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh.!",
-//     photo: kidsImage,
-//   },
-//   {
-//     name: "Sarah",
-//     occupation: "Marketing Manager",
-//     testimony:
-//       "I Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. my English a lot.",
-//     photo: adultsImage,
-//   },
-//   {
-//     name: "Mike",
-//     occupation: "University Student",
-//     testimony:
-//       "Very Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. lessons.",
-//     photo: teenagersImage,
-//   },
-//   {
-//     name: "Emma",
-//     occupation: "Business Consultant",
-//     testimony:
-//       "I feel Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. more confident speaking English.",
-//     photo: businessImage,
-//   },
-//   {
-//     name: "David",
-//     occupation: "High School Teacher",
-//     testimony:
-//       "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. are engaging and personalized.",
-//     photo: examsImage,
-//   },
-// ];
-
 function Home() {
-  // const [activeCard, setActiveCard] = useState<number | null>(null);
+  const [activeCard, setActiveCard] = useState<number | null>(null);
 
   const [activeTestimony, setActiveTestimony] = useState<number>(0);
 
@@ -117,7 +45,7 @@ function Home() {
     throw new Error("Navbar must be inside LanguageContext.Provider");
   }
 
-  const { texts, language } = context;
+  const { texts } = context;
 
   const { home } = texts;
 
@@ -131,12 +59,10 @@ function Home() {
     examsImage,
   ];
 
-  // const questions = language === "es" ? esQuestions.home : enQuestions.home;
-
   return (
     <>
       <section className={styles.heroSection}>
-        <p className={styles.heroEyebrow}>{hero.eyebrow}</p>
+        <p className={styles.heroEyebrow}>HOLA COMO ESTAS</p>
 
         <h1 className={styles.heroTitle}>{hero.title}</h1>
 
@@ -187,30 +113,47 @@ function Home() {
           title={students.title}
           description={students.description}
         />
-
-        {/* <div className={styles.studentsGrid}>
-          {students.map((student, index) => (
-            <div
+        <div className={styles.studentsGrid}>
+          {students.items.map((student, index) => (
+            <article
               className={`${styles.studentItem} ${
                 activeCard === index ? styles.studentItemActive : ""
               }`}
-              key={student.title}
               onClick={() => setActiveCard(activeCard === index ? null : index)}
-              style={{ backgroundImage: `url(${student.backgroundImage})` }}
+              style={
+                activeCard === index
+                  ? {}
+                  : { backgroundImage: `url(${student.image})` }
+              }
             >
-              <div className={styles.studentItemPreview}>
-                <p className={styles.studentItemPreviewTitle}>
-                  {student.title}
-                </p>
-              </div>
+              {activeCard !== index && (
+                <h3 className={styles.studentMainTitle}>{student.title}</h3>
+              )}
 
-              <div className={styles.studentItemExpanded}>
-                <p>{student.title}</p>
-                <p>{student.description}</p>
-              </div>
-            </div>
+              {activeCard === index && (
+                <>
+                  <div className={styles.studentContent}>
+                    <span className={styles.studentKeyword}>
+                      {student.keywords}
+                    </span>
+
+                    <h3 className={styles.studentTitle}>{student.title}</h3>
+
+                    <p className={styles.studentDescription}>
+                      {student.description}
+                    </p>
+                  </div>
+
+                  <img
+                    className={styles.studentImage}
+                    src={student.image}
+                    alt=""
+                  />
+                </>
+              )}
+            </article>
           ))}
-        </div> */}
+        </div>
       </section>
 
       <section className={styles.benefitsSection}>

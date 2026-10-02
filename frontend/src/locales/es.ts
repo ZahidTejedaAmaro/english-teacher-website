@@ -1,3 +1,5 @@
+import kidsImage from "../assets/images/studentsSection/kids.jpg";
+
 export const es = {
   header: {
     home: "INICIO",
@@ -29,6 +31,56 @@ export const es = {
       title: "Clases para todos",
       description:
         "No hay dos alumnos iguales. Entiendo que cada estudiante tiene sus propias necesidades y metas. Por eso ofrezco clases flexibles adaptadas a diferentes estilos de aprendizaje, necesidades y metas.",
+      items: [
+        {
+          title: "Niños",
+          keywords: "7 años",
+          description:
+            "Ayudamos a los niños a desarrollar su confianza y comunicarse en inglés desde una edad temprana.",
+          button: "Conoce más",
+          image: kidsImage,
+        },
+        {
+          title: "Adolescentes",
+          keywords: "12 años",
+          description:
+            "Fortalecemos sus habilidades de comunicación para que puedan expresarse con mayor seguridad.",
+          button: "Conoce más",
+          image: kidsImage,
+        },
+        {
+          title: "Estudiantes",
+          keywords: "16 años",
+          description:
+            "Desarrollamos sus habilidades en inglés para acompañarlos en sus estudios y futuros proyectos.",
+          button: "Conoce más",
+          image: kidsImage,
+        },
+        {
+          title: "Adultos",
+          keywords: "18+ años",
+          description:
+            "Mejora tu inglés y gana la confianza necesaria para comunicarte en situaciones reales.",
+          button: "Conoce más",
+          image: kidsImage,
+        },
+        {
+          title: "Profesionales",
+          keywords: "Inglés profesional",
+          description:
+            "Desarrolla las habilidades de comunicación que necesitas para crecer en un entorno profesional.",
+          button: "Conoce más",
+          image: kidsImage,
+        },
+        {
+          title: "Docentes",
+          keywords: "Profesores",
+          description:
+            "Fortalece tus habilidades lingüísticas y pedagógicas para enseñar inglés con mayor confianza.",
+          button: "Conoce más",
+          image: kidsImage,
+        },
+      ],
     },
     benefits: {
       eyebrow: "ENCUENTRA TU CLASE",

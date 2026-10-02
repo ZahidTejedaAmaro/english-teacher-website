@@ -10,7 +10,7 @@
 .heroEyebrow {
   font-size: var(--font-lg);
   color: var(--accent-primary);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   margin: 0;
 }
 
@@ -146,67 +146,85 @@
   text-align: center;
 }
 
-.studentsSection {
-  justify-content: center;
-  font-size: 48px;
-}
-
 .studentsGrid {
   display: flex;
-  gap: 16px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.studentsGrid {
-  display: flex;
-  gap: 16px;
-  max-width: 1100px;
+  gap: 4px;
+  width: 100%;
   margin: 0 auto;
   justify-content: center;
 }
 
 .studentItem {
-  flex: 0 1 calc((100% - 5 * 16px - 100px) / 6);
   height: 450px;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 20px;
-  padding: 16px 60px;
+  min-width: 80px;
+  width: clamp(100px, 15vw, 150px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--border-default);
+  background-color: var(--background-tertiary);
+}
+
+.studentItem:hover {
+  cursor: pointer;
 }
 
 .studentItemActive {
-  flex: 1;
-  padding: 0;
+  width: clamp(196px, 19.33vw, 290px);
+  box-sizing: border-box;
 }
 
-.studentItemPreview {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.studentItemPreviewTitle {
+.studentMainTitle {
   writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: 36px;
+  transform: translateX(-50%) rotate(180deg);
+  margin: 0;
+  font-size: clamp(20px, 5vw, 36px);
   font-weight: 700;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
   color: var(--text-inverse);
+  box-sizing: border-box;
+}
+
+.studentContent {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.studentKeyword {
+  align-self: flex-start;
+  background-color: var(--background-secondary);
+  padding: 4px 8px;
+  font-weight: 600;
+  border-radius: 12px;
+
+  font-size: clamp(12px, 1.7vw, 16px);
+}
+
+.studentTitle {
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 600;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.studentDescription {
+  font-size: clamp(16px, 2.2vw, 20px);
+  color: var(--text-secondary);
   margin: 0;
 }
 
-.studentItemActive .studentItemPreview {
-  display: none;
-}
-
-.studentItemExpanded {
-  display: none;
-}
-
-.studentItemActive .studentItemExpanded {
-  display: flex;
+.studentImage {
+  width: 100%;
+  height: 100%;
 }
 
 .benefitsGrid {
@@ -279,11 +297,18 @@
 
 .testimonialsEyebrow {
   text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin: 0;
 }
 
 .testimonialsTitle {
   text-align: left;
   width: 90%;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 8px 0;
 }
 
 .testimonialContent {
@@ -348,7 +373,7 @@
 
 @media screen and (max-width: 800px) {
   .heroEyebrow {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .heroTitle {
@@ -407,64 +432,6 @@
     font-size: 14px;
   }
 
-  /* .studentsGrid {
-    display: flex;
-    gap: 16px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .studentsGrid {
-    display: flex;
-    gap: 16px;
-    max-width: 1100px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  .studentItem {
-    flex: 0 1 calc((100% - 5 * 16px - 100px) / 6);
-    height: 450px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 20px;
-    padding: 16px 60px;
-  }
-
-  .studentItemActive {
-    flex: 1;
-    padding: 0;
-  }
-
-  .studentItemPreview {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .studentItemPreviewTitle {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--text-inverse);
-    margin: 0;
-  }
-
-  .studentItemActive .studentItemPreview {
-    display: none;
-  }
-
-  .studentItemExpanded {
-    display: none;
-  }
-
-  .studentItemActive .studentItemExpanded {
-    display: flex;
-  } */
-
   .benefitsGrid {
     gap: 8px;
   }
@@ -506,6 +473,7 @@
 
   .testimonialsEyebrow {
     text-align: center;
+    font-size: 14px;
   }
 
   .testimonialsTitle {
@@ -513,6 +481,7 @@
     margin: auto;
     margin: 8px 0 16px;
     width: auto;
+    font-size: 30px;
   }
 
   .testimonialText {
@@ -550,10 +519,56 @@
   }
 }
 
+@media (max-width: 700px) {
+  .studentsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 0px;
+  }
+
+  .studentItem {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .studentMainTitle {
+    position: static;
+    transform: none;
+    writing-mode: horizontal-tb;
+    margin: 0;
+    font-weight: 700;
+    color: var(--text-inverse);
+    box-sizing: border-box;
+    text-align: center;
+    margin: 8px;
+  }
+
+  .studentItemActive {
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroCtaGroup {
+    gap: 8px;
+  }
+
+  .heroCtaGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroButton {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .heroEyebrow {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .heroTitle {
@@ -565,10 +580,6 @@
     font-size: 18px;
     text-align: center;
     margin: 8px 0 16px;
-  }
-
-  .heroCtaGroup {
-    gap: 8px;
   }
 
   .heroButton {
@@ -603,69 +614,14 @@
     padding: 0 8px;
   }
 
-  /* .studentsSection {
-    justify-content: center;
-    font-size: 48px;
-    font-weight: 600;
-  } */
-
-  /* .studentsGrid {
-    display: flex;
-    gap: 16px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
   .studentsGrid {
-    display: flex;
-    gap: 16px;
-    max-width: 1100px;
-    margin: 0 auto;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .studentItem {
-    flex: 0 1 calc((100% - 5 * 16px - 100px) / 6);
-    height: 450px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 20px;
-    padding: 16px 60px;
+  .studentTitle {
+    font-size: 20;
   }
-
-  .studentItemActive {
-    flex: 1;
-    padding: 0;
-  }
-
-  .studentItemPreview {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .studentItemPreviewTitle {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--text-inverse);
-    margin: 0;
-  }
-
-  .studentItemActive .studentItemPreview {
-    display: none;
-  }
-
-  .studentItemExpanded {
-    display: none;
-  }
-
-  .studentItemActive .studentItemExpanded {
-    display: flex;
-  } */
 
   .benefitsGrid {
     gap: 8px;
@@ -701,10 +657,12 @@
 
   .testimonialsEyebrow {
     text-align: center;
+    font-size: 14px;
   }
 
   .testimonialsTitle {
     margin: 8px 0 8px;
+    font-size: 20px;
   }
 
   .testimonialText {
