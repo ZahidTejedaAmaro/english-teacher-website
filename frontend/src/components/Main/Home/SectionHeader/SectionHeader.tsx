@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 interface SectionHeaderProps {
   eyebrow: string;
   title: string;
-  description: string;
+  description?: string;
 }
 
 function SectionHeader({ eyebrow, title, description }: SectionHeaderProps) {
@@ -13,7 +13,7 @@ function SectionHeader({ eyebrow, title, description }: SectionHeaderProps) {
 
       <h2 className={styles.title}>{title}</h2>
 
-      <p className={styles.description}>{description}</p>
+      {description && <p className={styles.description}>{description}</p>}
     </div>
   );
 }

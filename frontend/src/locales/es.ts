@@ -18,6 +18,7 @@ export const es = {
       bookClass: "Agendar una clase",
       scroll: "DESCUBRE MAS",
     },
+
     fact: {
       title: "Aprender ingles ayuda",
       description:
@@ -82,6 +83,7 @@ export const es = {
         },
       ],
     },
+
     benefits: {
       eyebrow: "ENCUENTRA TU CLASE",
       title: "Clases para todos",
@@ -167,6 +169,76 @@ export const es = {
           occupation: "Profesor de secundaria",
           testimony:
             "Las clases son interesantes y personalizadas. La metodología hace que aprender inglés sea mucho más práctico y agradable.",
+        },
+      ],
+    },
+  },
+
+  about: {
+    hero: {
+      title: "More than learning English. You have to feel it.",
+      firstParagraph:
+        "Hi! I'm Yvette, an English teacher with over 24 years of experience helping students build confidence and achieve their language goals.",
+      secondParagraph: {
+        bold: "Teaching English is more than my profession—it's my passion.",
+        normal:
+          "Throughout my career, I have worked with children, teenagers, adults, and teachers, creating engaging, meaningful, and student-centered learning experiences that inspire confidence and a genuine love for the English language.",
+      },
+      button: "Book your class",
+      name: "Ivette Castro",
+      profession: "English teacher",
+    },
+
+    background: {
+      eyebrow: "QUALIFICATIONS & EXPERIENCE",
+      title: "My journey",
+      academicTitle: "Academic Background",
+      academic: [
+        {
+          title: "English Language Teaching",
+          type: "BACHELOR’S DEGREE",
+          description:
+            "Focused on English language teaching, classroom methodology, lesson planning, and effective communication strategies.",
+          date: "2022 - 2025",
+        },
+        {
+          title: "Primary Education",
+          type: "BACHELOR’S DEGREE",
+          description:
+            "Developed a strong foundation in education, child development, classroom management, and student-centered learning approaches, with practical experience working with young learners. Completed all three Teaching Knowledge Test modules, covering language and the language learning process, lesson planning and resources, and classroom management.",
+          date: "2018 - 2022",
+        },
+      ],
+
+      qualificationsTitle: "Professional Qualifications",
+      qualifications: [
+        {
+          title: "Cambridge Speaking Examiner",
+          type: "CERTIFICATION",
+          description:
+            "Qualified to assess speaking performance in Cambridge English examinations.",
+          date: "2025",
+        },
+        {
+          title: "C1 Advanced (CAE)",
+          type: "CERTIFICATION",
+          description:
+            "Demonstrated advanced English proficiency through the Cambridge C1 Advanced qualification, with a focus on effective communication and language accuracy.",
+          date: "2024",
+        },
+        {
+          title: "TKT Modules 1–3",
+          type: "CERTIFICATION",
+          description:
+            "Completed all three Teaching Knowledge Test modules, covering language and the language learning process, lesson planning and resources, and classroom management. Completed all three Teaching Knowledge Test modules, covering language and the language learning process, lesson planning and resources, and classroom management.",
+          date: "2023",
+        },
+        {
+          title: "ICELT",
+          type: "CERTIFICATION",
+          description:
+            "Completed the International Certificate in English Language Teaching, developing practical skills in lesson planning, classroom management, teaching methodology, and reflective practice.",
+          date: "2022",
         },
       ],
     },
