@@ -1,6 +1,6 @@
 import typography from "../../../styles/typography.module.css";
 
-import expandIcon from "../../../assets/icons/expandIcon.svg";
+import BackgroundItem from "./Background/Background";
 
 import styles from "./style.module.css";
 
@@ -16,7 +16,10 @@ import { LanguageContext } from "../../../contexts/LanguageContext";
 function About() {
   const context = useContext(LanguageContext);
 
-  const [activeCard, setActiveCard] = useState<number | null>(null);
+  const [activeAcademic, setActiveAcademic] = useState<number | null>(null);
+  const [activeQualification, setActiveQualification] = useState<number | null>(
+    null,
+  );
 
   if (!context) {
     throw new Error("Navbar must be inside LanguageContext.Provider");
@@ -63,61 +66,31 @@ function About() {
             <h3 className={styles.backgroundSubtitle}>
               {background.academicTitle}
             </h3>
-            <div className={styles.backgroundGrid}>
-              {background.academic.map((item) => (
-                <div className={styles.backgroundItem}>
-                  <p className={styles.backgroundItemTitle}>{item.title}</p>
-                  <p className={styles.backgroundItemType}>{item.type}</p>
-                  <p className={styles.backgroundItemDescription}>
-                    {item.description}
-                    <div className={styles.backgroundItemLine}></div>
-                    <p className={styles.backgroundItemDate}>{item.date}</p>
-                  </p>
-                </div>
-              ))}{" "}
-            </div>
-          </div>{" "}
+            {background.academic.map((item, index) => (
+              <BackgroundItem
+                key={item.title}
+                item={item}
+                index={index}
+                activeCard={activeAcademic}
+                setActiveCard={setActiveAcademic}
+                mobileCollapse
+              />
+            ))}
+          </div>
           <div className={styles.backgroundQualifications}>
             <h3 className={styles.backgroundSubtitle}>
               {background.qualificationsTitle}
             </h3>
-            <div className={styles.backgroundGrid}>
-              {background.qualifications.map((item, index) => (
-                <div
-                  className={styles.backgroundItem}
-                  onClick={() =>
-                    setActiveCard(activeCard === index ? null : index)
-                  }
-                >
-                  {" "}
-                  <div className={styles.backgroundIntroContainer}>
-                    <div className={styles.backgroundIntroText}>
-                      <p className={styles.backgroundItemTitle}>{item.title}</p>
-                      <p className={styles.backgroundItemType}>{item.type}</p>
-                    </div>
-                    <img
-                      className={`${styles.backgroundIcon} ${
-                        activeCard === index
-                          ? styles.backgroundIconExpanded
-                          : ""
-                      }`}
-                      src={expandIcon}
-                      alt=""
-                    />
-                  </div>
-                  {activeCard === index && (
-                    <>
-                      <p className={styles.backgroundItemDescription}>
-                        {item.description}
-                        <div className={styles.backgroundItemLine}></div>
-                        <p className={styles.backgroundItemDate}>{item.date}</p>
-                      </p>
-                    </>
-                  )}
-                </div>
-              ))}{" "}
-            </div>
-          </div>{" "}
+            {background.qualifications.map((item, index) => (
+              <BackgroundItem
+                key={item.title}
+                item={item}
+                index={index}
+                activeCard={activeQualification}
+                setActiveCard={setActiveQualification}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </>

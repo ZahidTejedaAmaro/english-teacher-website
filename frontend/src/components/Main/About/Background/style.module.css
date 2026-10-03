@@ -1,0 +1,62 @@
+.backgroundGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.backgroundItem {
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.backgroundItem:hover {
+  cursor: pointer;
+}
+
+.backgroundIntroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backgroundItemTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.backgroundItemType {
+  font-size: 16px;
+  color: var(--accent-primary);
+  margin: 0;
+}
+
+.backgroundIcon {
+}
+
+.backgroundIconExpanded {
+  transform: rotate(180deg);
+}
+
+.backgroundItemDescription {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.backgroundItemLine {
+  height: 1px;
+  background-color: var(--border-subtle);
+}
+
+.backgroundItemDate {
+  font-size: 16px;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  margin: 0;
+}
