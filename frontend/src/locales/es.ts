@@ -242,5 +242,50 @@ export const es = {
         },
       ],
     },
+    philosophy: {
+      eyebrow: "PHILOSOPHY",
+      title: "What actually matters in every lesson",
+      firstParagraph:
+        "My teaching philosophy is built around creating a supportive and purposeful learning experience. I believe students learn best when they feel comfortable exploring, asking questions, and expressing themselves without fear of making mistakes.",
+      secondParagraph:
+        "Every lesson is designed to encourage curiosity, build confidence, and support meaningful progress. My goal is to give students the skills and independence they need to use English naturally and confidently beyond the classroom.",
+    },
+    values: {
+      eyebrow: "VALUES",
+      title: "What I bring to every lesson",
+      description:
+        "Every lesson is designed to be more than just learning English. I bring experience, curiosity, and a genuine commitment to creating a supportive environment where you can build confidence, stay motivated, and make meaningful progress.",
+      items: [
+        {
+          icon: kidsImage,
+          title: "Confidence",
+          description:
+            "Helping students find their voice and communicate with confidence.",
+        },
+        {
+          icon: kidsImage,
+          title: "Communication",
+          description:
+            "Encouraging meaningful conversations and clear self-expression.",
+        },
+        {
+          icon: kidsImage,
+          title: "Personal Growth",
+          description:
+            "Supporting continuous learning through practice and dedication.",
+        },
+        {
+          icon: kidsImage,
+          title: "Personalized Support",
+          description:
+            "Adapting each lesson to the student's needs, goals, and progress.",
+        },
+      ],
+    },
+    motivation: {
+      title: "The goal isn't perfect English. It's confident English.",
+      description:
+        "Through meaningful practice and personalized guidance, you'll develop the skills and confidence to communicate more naturally.",
+    },
   },
 };

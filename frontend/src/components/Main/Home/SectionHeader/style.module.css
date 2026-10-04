@@ -1,3 +1,7 @@
+.sectionHeader {
+  margin: 0 auto 32px;
+}
+
 .eyebrow {
   font-size: 18px;
   font-weight: 600;
@@ -9,19 +13,24 @@
 .title {
   font-size: 48px;
   font-weight: 600;
-  margin: 8px 0;
+  margin: 8px 0 8px;
   text-align: center;
 }
 
 .description {
   font-size: 24px;
   color: var(--text-secondary);
-  margin: 0 auto 32px;
+
   text-align: center;
   max-width: 900px;
+  margin: 0;
 }
 
 @media screen and (max-width: 800px) {
+  .sectionHeader {
+    margin: 0 auto 16px;
+  }
+
   .eyebrow {
     font-size: 14px;
   }

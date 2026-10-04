@@ -2,7 +2,7 @@ import typography from "../../../styles/typography.module.css";
 
 import { useState } from "react";
 
-import CTA from "./CTA/CTA";
+import CTA from "../CTA/CTA";
 
 import SectionHeader from "./SectionHeader/SectionHeader";
 

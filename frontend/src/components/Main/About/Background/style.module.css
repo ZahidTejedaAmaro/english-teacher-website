@@ -60,3 +60,21 @@
   font-weight: 500;
   margin: 0;
 }
+
+@media screen and (max-width: 450px) {
+  .backgroundItemTitle {
+    font-size: 16px;
+  }
+
+  .backgroundItemType {
+    font-size: 14px;
+  }
+
+  .backgroundItemDescription {
+    font-size: 14px;
+  }
+
+  .backgroundItemDate {
+    font-size: 12px;
+  }
+}

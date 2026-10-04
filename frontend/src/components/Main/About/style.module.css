@@ -1,13 +1,17 @@
+/* #region Hero */
+
 .heroSection {
   padding: clamp(48px, 5vw, 80px) 0;
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: clamp(24px, 3vw, 32px);
+  gap: clamp(16px, 3vw, 32px);
+  /* gap: 32px; */
 }
 
 .heroPhotoContainer {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -19,16 +23,19 @@
 }
 
 .heroContent {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .heroTitle {
-  font-size: clamp(30px, 4vw, 60px);
+  font-size: clamp(36px, 4vw, 60px);
+  font-size: clamp(2.25rem, 0.375rem + 3.75vw, 3.75rem);
   font-weight: 600;
   margin: 0 0 clamp(16px, 2vw, 32px);
+  /* margin: 0 0 32px; */
 }
 
 .heroTextContainer {
@@ -39,7 +46,7 @@
 
 .heroText {
   margin: 0;
-  font-size: clamp(14px, 1.6vw, 24px);
+  font-size: clamp(18px, 1.6vw, 24px);
 }
 
 .heroBold {
@@ -54,15 +61,15 @@
 }
 
 .heroButton {
-  font-size: clamp(16px, 2vw, 30px);
-  /* font-size: 30px; */
+  font-size: clamp(20px, 2vw, 30px);
+
   color: var(--text-inverse);
   background-color: var(--accent-primary);
-  width: 300px;
-  width: clamp(170px, 18vw, 300px);
-  padding: 0 8px;
-  height: clamp(48px, 4vw, 60px);
-  height: 60px;
+  /* width: 300px; */
+  /* width: clamp(170px, 18vw, 300px); */
+  padding: 16px 16px;
+  /* height: clamp(48px, 4vw, 60px); */
+  /* height: 60px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,26 +78,65 @@
 
 .heroName {
   margin: 0;
-  font-size: clamp(16px, 1.6vw, 24px);
+  font-size: clamp(18px, 1.6vw, 24px);
   font-weight: 700;
 }
 
 .heroProfession {
   margin: 0;
-  font-size: clamp(14px, 1.3vw, 20px);
+  font-size: clamp(16px, 1.3vw, 20px);
 }
+
+@media screen and (max-width: 700px) {
+  .heroSection {
+    flex-direction: column;
+  }
+
+  .heroPhotoContainer {
+    min-height: 300px;
+    height: 250px;
+  }
+
+  /* .heroBottomContainer {
+    justify-content: space-evenly;
+  } */
+}
+
+@media screen and (max-width: 450px) {
+  .heroTitle {
+    font-size: 30px;
+  }
+
+  .heroText {
+    font-size: 16px;
+  }
+
+  .heroButton {
+    font-size: 16px;
+  }
+
+  .heroName {
+    font-size: 16px;
+  }
+
+  .heroProfession {
+    font-size: 14px;
+  }
+}
+
+/* #endregion */
+
+/* #region Background */
 
 .backgroundContent {
   display: flex;
   gap: 48px;
 }
 
-.backgroundAcademic,
-.backgroundQualifications {
+.backgroundContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .backgroundSubtitle {
@@ -99,3 +145,356 @@
   margin: 0 0 24px;
   text-align: center;
 }
+
+.backgroundGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .backgroundContent {
+    gap: 32px;
+  }
+
+  .backgroundContent {
+    flex-direction: column;
+  }
+
+  .backgroundSubtitle {
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .backgroundContent {
+    gap: 32px;
+  }
+
+  .backgroundSubtitle {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+}
+
+/* #endregion */
+
+/* #region Philosophy */
+
+.philosophySection {
+  display: flex;
+  gap: 32px;
+}
+
+.philosophyContent {
+  flex: 1;
+}
+
+.philosophyEyebrow {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin: 0;
+}
+
+.philosophyTitle {
+  font-size: 48px;
+  margin: 8px 0 32px;
+  font-weight: 600;
+}
+
+.philosophyTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.philosophyText {
+  font-size: 24px;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.philosophyButton {
+  display: block;
+  font-size: 18px;
+  color: var(--accent-primary);
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+.philosophyPhotoContainer {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.philosophyPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .philosophySection {
+    display: flex;
+    gap: 16px;
+  }
+
+  .philosophyEyebrow {
+    font-size: 14px;
+  }
+
+  .philosophyTitle {
+    font-size: 30px;
+    margin: 8px 0 16px;
+  }
+
+  .philosophyText {
+    font-size: 18px;
+  }
+
+  .philosophyTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .philosophyButton {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .philosophySection {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .philosophyEyebrow {
+    font-size: 14px;
+  }
+
+  .philosophyTitle {
+    font-size: 20px;
+    margin: 8px 0 16px;
+  }
+
+  .philosophyText {
+    font-size: 16px;
+  }
+
+  .philosophyTextContainer {
+    gap: 8px;
+  }
+
+  .philosophyButton {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+}
+
+/* #endregion */
+
+/* #region Values */
+
+.valuesGrid {
+  display: flex;
+  gap: 16px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.valuesItem {
+  box-sizing: border-box;
+  flex: 1 1 0;
+  min-width: 0;
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--border-default);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.valueIcon {
+  width: 120px;
+  height: 120px;
+}
+
+.valueTitle {
+  font-size: 20px;
+  font-weight: 600;
+
+  margin: 32px 0 8px;
+}
+
+.valueDescription {
+  font-size: 18px;
+  margin: 0;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .valuesItem {
+    padding: 16px 8px;
+  }
+
+  .valueIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .valueTitle {
+    font-size: 18px;
+  }
+
+  .valueDescription {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .valuesGrid {
+    gap: 4px;
+  }
+
+  .valuesItem {
+    padding: 16px 8px;
+  }
+
+  .valueIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .valueTitle {
+    font-size: 16px;
+    margin: 16px 0 8px;
+  }
+
+  .valueDescription {
+    font-size: 16px;
+  }
+}
+
+/* #endregion */
+
+/* #region Motivation */
+
+.motivationSection {
+  display: flex;
+  padding: 48px;
+  background-color: var(--background-tertiary);
+  border-radius: 12px;
+}
+
+.motivationPhotoContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.motivationPhoto {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.motivationContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.motivationTitle {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.motivationDescription {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+@media screen and (max-width: 800px) {
+  .motivationSection {
+    padding: 48px 24px;
+  }
+
+  .motivationPhotoContainer {
+  }
+
+  .motivationPhoto {
+    width: 250px;
+    height: 250px;
+  }
+
+  .motivationContent {
+  }
+
+  .motivationTitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .motivationDescription {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--text-secondary);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .motivationSection {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .motivationContent {
+    gap: 8px;
+  }
+
+  .motivationTitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 16px 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .motivationPhoto {
+    width: 150px;
+    height: 150px;
+  }
+
+  .motivationTitle {
+    font-size: 20px;
+  }
+
+  .motivationDescription {
+    font-size: 16px;
+  }
+}
+
+/* #endregion */
