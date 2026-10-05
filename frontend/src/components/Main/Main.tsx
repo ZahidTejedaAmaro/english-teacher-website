@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 import Home from "./Home/Home";
 import About from "./About/About";
-// import Classes from "./Classes/Classes";
+import Classes from "./Classes/Classes";
 import Book from "./Book/Book";
 
 function Main() {
@@ -13,7 +13,7 @@ function Main() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/classes" element={<Classes />} /> */}
+          <Route path="/classes" element={<Classes />} />
           <Route path="/book" element={<Book />} />
         </Routes>
       </div>

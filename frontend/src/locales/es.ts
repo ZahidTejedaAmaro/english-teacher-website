@@ -288,4 +288,51 @@ export const es = {
         "Through meaningful practice and personalized guidance, you'll develop the skills and confidence to communicate more naturally.",
     },
   },
+  classes: {
+    hero: {
+      eyebrow: "FIND YOUR FIT",
+      title: "Classes for everyone",
+      description:
+        "No two learners are the same. I understand that every student has their own needs and goals. That’s why I offer flexible classes tailored to different learning styles, needs, and goals.",
+      buttonsTitle: "Tipo de estudiante",
+      items: [
+        {
+          title: "kids",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget convallis mi. Aenean tristique lectus eu tincidunt lobortis. ",
+          image: kidsImage,
+        },
+        {
+          title: "teenagers",
+          description:
+            "Build confidence and improve communication skills.Learn English through fun and engaging activities.Learn English through fun and engaging activities.Learn English through fun and engaging activities.",
+          image: kidsImage,
+        },
+        {
+          title: "students",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget convallis mi. Aenean tristique lectus eu tincidunt lobortis. ",
+          image: kidsImage,
+        },
+        {
+          title: "adults",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget convallis mi. Aenean tristique lectus eu tincidunt lobortis. ",
+          image: kidsImage,
+        },
+        {
+          title: "professionals",
+          description:
+            "Strengthen your English for the workplace and beyond.Learn English through fun and engaging activities.Learn English through fun and engaging activities.Learn English through fun and engaging activities.",
+          image: kidsImage,
+        },
+        {
+          title: "teachers",
+          description:
+            "Expand your teaching skills and English proficiency.Learn English through fun and engaging activities.Learn English through fun and engaging activities.",
+          image: kidsImage,
+        },
+      ],
+    },
+  },
 };
