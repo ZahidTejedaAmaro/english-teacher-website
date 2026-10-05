@@ -26,7 +26,7 @@ function About() {
     throw new Error("Navbar must be inside LanguageContext.Provider");
   }
 
-  const { texts, language } = context;
+  const { texts } = context;
 
   const { about } = texts;
   const { hero, background, philosophy, values, motivation } = about;
