@@ -334,5 +334,196 @@ export const es = {
         },
       ],
     },
+    stats: {
+      title: "¿Qué ofrezco?",
+      description:
+        "Cada lección está diseñada alrededor de tus objetivos, tu horario y un inglés práctico que puedes usar todos los días.",
+      items: [
+        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+      ],
+    },
+    formats: {
+      eyebrow: "OUR CLASS FORMATS",
+      title: "Modern English classes for an active learning",
+      description:
+        "Integer commodo lacus ut magna aliquam, ac consectetur sapien hendrerit. Integer scelerisque vestibulum quam auctor suscipit. Vestibulum aliquet metus vitae bibendum pulvinar. ",
+      items: [
+        {
+          image: kidsImage,
+          title: "One-to-one class",
+          modality: "Online",
+          students: "1 Student",
+        },
+        {
+          image: kidsImage,
+          title: "Small group class",
+          modality: "In person",
+          students: "2–5 Students",
+        },
+        {
+          image: kidsImage,
+          title: "Conversation class",
+          modality: "Online",
+          students: "1–4 Students",
+        },
+        {
+          image: kidsImage,
+          title: "Professional English",
+          modality: "In person",
+          students: "1–6 Students",
+        },
+      ],
+    },
+    methodology: {
+      eyebrow: "QUALIFICATIONS & EXPERIENCE",
+      title: "Methodology",
+      description:
+        "Every lesson is designed around your goals, your schedule, and practical English you can use every day.",
+      items: [
+        {
+          button: "Speaking",
+          title: "Communication",
+          firstParagraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+          secondParagraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+          image: kidsImage,
+        },
+        {
+          button: "Listening",
+          title: "Understanding",
+          firstParagraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+          secondParagraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+          image: kidsImage,
+        },
+        {
+          button: "Reading",
+          title: "Comprehension",
+          firstParagraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+          secondParagraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+          image: kidsImage,
+        },
+        {
+          button: "Writing",
+          title: "Expression",
+          firstParagraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+          secondParagraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+          image: kidsImage,
+        },
+      ],
+    },
+    faq: {
+      eyebrow: "FAQ",
+      title: "Everything you need to know",
+      description:
+        "Every lesson is designed around your goals, your schedule, and practical English you can use every day.",
+      buttonsTitle: "CATEGORIAS",
+      items: [
+        {
+          button: "Classes",
+          questions: [
+            {
+              question: "How long is each class?",
+              answer:
+                "Each class lasts approximately one hour, depending on the student's needs and the type of lesson.",
+            },
+            {
+              question: "Are classes available online?",
+              answer:
+                "Yes. Online classes are available and can be adapted to different schedules and learning goals.",
+            },
+            {
+              question: "Are classes suitable for beginners?",
+              answer:
+                "Absolutely. Classes can be adapted to your current level, from beginner to advanced.",
+            },
+            {
+              question: "Can I choose the days and times?",
+              answer:
+                "Yes. Available schedules depend on the class format and current availability.",
+            },
+            {
+              question: "Do you offer one-to-one classes?",
+              answer:
+                "Yes. One-to-one classes are available for students who want a more personalized learning experience.",
+            },
+          ],
+        },
+        {
+          button: "Learning",
+          questions: [
+            {
+              question: "How do you determine my English level?",
+              answer:
+                "Your level is evaluated through an initial assessment and a conversation about your previous learning experience.",
+            },
+            {
+              question: "What skills will I practice?",
+              answer:
+                "Classes can include speaking, listening, reading, writing, grammar, vocabulary, and pronunciation.",
+            },
+            {
+              question: "Will classes follow a specific program?",
+              answer:
+                "The lessons are structured around your goals, level, and areas that need the most attention.",
+            },
+            {
+              question: "How can I improve my speaking skills?",
+              answer:
+                "You will have regular opportunities to practice through guided conversations, activities, and real-life situations.",
+            },
+            {
+              question: "Can I learn English for professional purposes?",
+              answer:
+                "Yes. Lessons can focus on professional communication, workplace vocabulary, presentations, and other specific needs.",
+            },
+            {
+              question: "How quickly will I see progress?",
+              answer:
+                "Progress depends on your starting level, goals, consistency, and the amount of practice you do outside of class.",
+            },
+          ],
+        },
+        {
+          button: "Booking",
+          questions: [
+            {
+              question: "How can I book a class?",
+              answer:
+                "You can request a trial class through the booking page and choose from the available options.",
+            },
+            {
+              question: "Do you offer a trial class?",
+              answer:
+                "Yes. A trial class gives you the opportunity to experience the teaching method and discuss your learning goals.",
+            },
+            {
+              question: "What happens during the trial class?",
+              answer:
+                "We discuss your goals, review your current level, and complete activities that help determine the best approach for you.",
+            },
+            {
+              question: "Do I need to prepare anything before my first class?",
+              answer:
+                "No special preparation is required. Just bring your questions, goals, and willingness to practice.",
+            },
+            {
+              question: "Can I change my class schedule?",
+              answer:
+                "Schedule changes can be arranged depending on availability and the notice provided.",
+            },
+          ],
+        },
+      ],
+    },
   },
 };

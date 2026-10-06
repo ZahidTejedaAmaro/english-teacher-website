@@ -1,14 +1,15 @@
 import styles from "./style.module.css";
 import typography from "../../../styles/typography.module.css";
 import SectionHeader from "../Home/SectionHeader/SectionHeader";
+import CTA from "../CTA/CTA";
+
+import questionIcon from "../../../assets/hero.png";
+import expandIcon from "../../../assets/icons/expandIcon.svg";
 
 import { useState, useEffect } from "react";
 
 // import { es } from "../../../locales/es";
 // import { en } from "../../../locales/en";
-
-import { esQuestions } from "../../../locales/faq/es";
-import { enQuestions } from "../../../locales/faq/en";
 
 import { useContext } from "react";
 
@@ -25,14 +26,12 @@ function Classes() {
 
   const { classes } = texts;
 
-  const { hero } = classes;
-
-  //   interface HeroItem {
-  //     title: string;
-  //     description: string;
-  //   }
+  const { hero, stats, formats, methodology, faq } = classes;
 
   const [activeStudent, setActiveStudent] = useState<number>(0);
+  const [activeMethodology, setActiveMethodology] = useState<number>(0);
+  const [activeQuestion, setActiveQuestion] = useState<number>(0);
+  const [isQuestionActive, setIsQuestionActive] = useState<number | null>(null);
 
   return (
     <>
@@ -77,6 +76,151 @@ function Classes() {
           </div>
         </div>
       </section>
+      <div className={styles.statsContainer}>
+        {stats.items.map((stat) => (
+          <div className={styles.statItem}>
+            <p className={styles.statTitle}>{stat.title}</p>
+            <p className={styles.statDescription}>{stat.description}</p>
+          </div>
+        ))}
+      </div>
+      <section className={styles.formatsSection}>
+        <SectionHeader
+          eyebrow={formats.eyebrow}
+          title={formats.title}
+          description={formats.description}
+        />
+        <div className={styles.formatsGrid}>
+          {formats.items.map((item) => (
+            <div key={item.title} className={styles.formatsItem}>
+              <img
+                className={styles.formatsItemImage}
+                src={item.image}
+                alt=""
+              />
+              <div className={styles.formatsItemContainer}>
+                <p className={styles.formatsItemTitle}>{item.title}</p>
+                <div className={styles.formatsItemRow}>
+                  <p className={styles.formatsItemText}>04:00 PM - 09:00 PM</p>
+                  <p className={styles.formatsItemText}>
+                    {" "}
+                    M · T · W · T · F · S · S
+                  </p>
+                </div>
+                <div className={styles.formatsItemRow}>
+                  <p className={styles.formatsItemText}>08:00 AM - 04:00 PM</p>
+                  <p className={styles.formatsItemText}>
+                    {" "}
+                    M · T · W · T · F · S · S
+                  </p>
+                </div>
+                <div className={styles.formatsItemRow}>
+                  <p className={styles.formatsItemText}>{item.modality}</p>
+                </div>
+                <div className={styles.formatsItemRow}>
+                  <p className={styles.formatsItemText}>{item.students}</p>
+                  <p className={styles.formatsItemText}>Ver detalles</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className={styles.methodologySection}>
+        <SectionHeader
+          eyebrow={methodology.eyebrow}
+          title={methodology.title}
+          description={methodology.description}
+        />
+        <div className={styles.methodologyContent}>
+          <div className={styles.methodologyButtons}>
+            {methodology.items.map((item, index) => (
+              <button
+                onClick={() => setActiveMethodology(index)}
+                className={styles.methodologyButton}
+              >
+                {item.button}
+              </button>
+            ))}
+          </div>
+          <div className={styles.methodologyBottomContainer}>
+            <div className={styles.methodologyInformation}>
+              <p className={styles.methodologyInformationTitle}>
+                {methodology.items[activeMethodology].title}
+              </p>
+              <p className={styles.methodologyInformationParagraph}>
+                {methodology.items[activeMethodology].firstParagraph}
+              </p>
+              <p className={styles.methodologyInformationParagraph}>
+                {methodology.items[activeMethodology].secondParagraph}
+              </p>
+            </div>
+            <img
+              className={styles.methodologyPhoto}
+              src={methodology.items[activeMethodology].image}
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section className={styles.faqSection}>
+        <SectionHeader
+          eyebrow={faq.eyebrow}
+          title={faq.title}
+          description={faq.description}
+        />
+        <div className={styles.faqContent}>
+          <div className={styles.faqButtons}>
+            <p className={styles.faqButtonsTitle}>{faq.buttonsTitle}</p>
+            {faq.items.map((item, index) => (
+              <button
+                className={styles.faqButton}
+                onClick={() => setActiveQuestion(index)}
+              >
+                {item.button}
+              </button>
+            ))}
+          </div>
+          <div className={styles.faqQuestions}>
+            {faq.items[activeQuestion].questions.map((item, index) => (
+              <div
+                key={item.question}
+                className={`${styles.faqQuestion} ${
+                  isQuestionActive === index ? styles.faqQuestionActive : ""
+                }`}
+                onClick={() =>
+                  setIsQuestionActive(isQuestionActive === index ? null : index)
+                }
+              >
+                <div className={styles.faqQuestionUpperContainer}>
+                  <div className={styles.faqQuestionLeftContainer}>
+                    {" "}
+                    <img
+                      className={styles.faqQuestionIcon}
+                      src={questionIcon}
+                      alt=""
+                    />{" "}
+                    <p className={styles.faqQuestionTitle}>{item.question}</p>
+                  </div>
+                  <img
+                    className={`${styles.faqQuestionExpandIcon} ${
+                      isQuestionActive === index
+                        ? styles.faqQuestionExpandIconActive
+                        : ""
+                    }`}
+                    src={expandIcon}
+                    alt=""
+                  />
+                </div>
+                {isQuestionActive === index && (
+                  <p className={styles.faqQuestionAnswer}>{item.answer}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <CTA />
     </>
   );
 }

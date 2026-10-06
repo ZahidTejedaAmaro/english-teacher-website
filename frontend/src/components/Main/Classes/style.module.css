@@ -121,3 +121,231 @@
     font-size: 16px;
   }
 }
+
+.statsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--background-tertiary);
+  text-align: center;
+  padding: 48px 0;
+  gap: 16px;
+}
+
+.statTitle {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.statDescription {
+  font-size: 24px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .statsContainer {
+    padding: 16px 0;
+    gap: 16px;
+  }
+
+  .statTitle {
+    font-size: 24px;
+  }
+
+  .statDescription {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .statsContainer {
+    padding: 8px 0;
+    gap: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .statTitle {
+    font-size: 18px;
+  }
+
+  .statDescription {
+    font-size: 12px;
+  }
+}
+
+.formatsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.formatsItem {
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.formatsItemContainer {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formatsItemImage {
+  width: 100%;
+  height: 50%;
+}
+
+.formatsItemTitle {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.formatsItemRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  text-align: center;
+}
+
+.formatsItemText {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+.methodologyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.methodologyButtons {
+  display: flex;
+  gap: 16px;
+}
+
+.methodologyButton {
+  font-size: 24px;
+  flex: 1;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--background-secondary);
+  color: var(--text-secondary);
+}
+
+.methodologyButton:hover {
+  cursor: pointer;
+}
+
+.methodologyBottomContainer {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: var(--background-secondary);
+}
+
+.methodologyInformation {
+  flex: 1;
+}
+
+.methodologyInformationTitle {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.methodologyInformationParagraph {
+  font-size: 24px;
+}
+
+.methodologyPhoto {
+  flex: 1;
+  min-width: 0;
+  border-radius: 12px;
+}
+
+.faqContent {
+  display: flex;
+
+  max-width: 1200px;
+  margin: auto;
+  gap: 32px;
+}
+
+.faqButtons {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.faqButtonsTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.faqButton {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  color: var(--text-secondary);
+  font-size: 24px;
+}
+.faqButton:hover {
+  cursor: pointer;
+}
+
+.faqQuestions {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faqQuestion {
+  background-color: var(--background-secondary);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.faqQuestion:hover {
+  cursor: pointer;
+}
+
+.faqQuestionUpperContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqQuestionLeftContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.faqQuestionIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.faqQuestionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.faqQuestionExpandIconActive {
+  rotate: 180deg;
+}
+
+.faqQuestionAnswer {
+  font-size: 18px;
+}
