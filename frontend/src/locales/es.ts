@@ -356,24 +356,36 @@ export const es = {
           title: "One-to-one class",
           modality: "Online",
           students: "1 Student",
+          expandedTitle: "Personalized learning",
+          expandedDescription:
+            "A personalized class designed around your goals, level, and learning pace.",
         },
         {
           image: kidsImage,
           title: "Small group class",
           modality: "In person",
           students: "2–5 Students",
+          expandedTitle: "Learn together",
+          expandedDescription:
+            "Practice English in a small group while developing communication and confidence.",
         },
         {
           image: kidsImage,
           title: "Conversation class",
           modality: "Online",
           students: "1–4 Students",
+          expandedTitle: "Speak with confidence",
+          expandedDescription:
+            "Improve your fluency through guided conversations and practical speaking activities.",
         },
         {
           image: kidsImage,
           title: "Professional English",
           modality: "In person",
           students: "1–6 Students",
+          expandedTitle: "English for your career",
+          expandedDescription:
+            "Develop the English skills you need to communicate effectively in professional environments.",
         },
       ],
     },

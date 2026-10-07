@@ -33,6 +33,8 @@ function Classes() {
   const [activeQuestion, setActiveQuestion] = useState<number>(0);
   const [isQuestionActive, setIsQuestionActive] = useState<number | null>(null);
 
+  const [isCardRevealed, setIsCardRevealed] = useState<number | null>(null);
+
   return (
     <>
       <section className={styles.heroSection}>
@@ -65,7 +67,7 @@ function Classes() {
               alt=""
             />
 
-            <div className={styles.heroText}>
+            <div className={styles.heroTextContainer}>
               <p className={styles.heroTextTitle}>
                 {hero.items[activeStudent].title}
               </p>
@@ -91,37 +93,66 @@ function Classes() {
           description={formats.description}
         />
         <div className={styles.formatsGrid}>
-          {formats.items.map((item) => (
-            <div key={item.title} className={styles.formatsItem}>
-              <img
-                className={styles.formatsItemImage}
-                src={item.image}
-                alt=""
-              />
-              <div className={styles.formatsItemContainer}>
-                <p className={styles.formatsItemTitle}>{item.title}</p>
-                <div className={styles.formatsItemRow}>
-                  <p className={styles.formatsItemText}>04:00 PM - 09:00 PM</p>
-                  <p className={styles.formatsItemText}>
-                    {" "}
-                    M · T · W · T · F · S · S
-                  </p>
+          {formats.items.map((item, index) => (
+            <div
+              key={item.title}
+              className={`${styles.formatsItem} ${
+                isCardRevealed === index ? styles.formatsItemRevealed : ""
+              }`}
+            >
+              {isCardRevealed === index ? (
+                <div
+                  className={styles.formatsItemExpanded}
+                  onClick={() => setIsCardRevealed(null)}
+                  style={{ backgroundImage: `url(${item.image})` }}
+                >
+                  <div className={styles.formatsItemExpandedContent}>
+                    <p className={styles.formatsItemExpandedTitle}>
+                      {item.expandedTitle}
+                    </p>
+                    <p className={styles.formatsItemExpandedDescription}>
+                      {item.expandedDescription}
+                    </p>
+                  </div>
                 </div>
-                <div className={styles.formatsItemRow}>
-                  <p className={styles.formatsItemText}>08:00 AM - 04:00 PM</p>
-                  <p className={styles.formatsItemText}>
-                    {" "}
-                    M · T · W · T · F · S · S
-                  </p>
-                </div>
-                <div className={styles.formatsItemRow}>
-                  <p className={styles.formatsItemText}>{item.modality}</p>
-                </div>
-                <div className={styles.formatsItemRow}>
-                  <p className={styles.formatsItemText}>{item.students}</p>
-                  <p className={styles.formatsItemText}>Ver detalles</p>
-                </div>
-              </div>
+              ) : (
+                <>
+                  <img
+                    className={styles.formatsItemImage}
+                    src={item.image}
+                    alt=""
+                  />
+
+                  <div className={styles.formatsItemContainer}>
+                    <p className={styles.formatsItemTitle}>{item.title}</p>
+
+                    <div className={styles.formatsItemRow}>
+                      <p className={styles.formatsItemText}>16:00 - 21:00</p>
+                      <p className={styles.formatsItemText}>Mon – Fri</p>
+                    </div>
+
+                    <div className={styles.formatsItemRow}>
+                      <p className={styles.formatsItemText}>08:00 - 16:00</p>
+                      <p className={styles.formatsItemText}>Sat – Sun</p>
+                    </div>
+
+                    <div className={styles.formatsItemRow}>
+                      <p className={styles.formatsItemText}>{item.modality}</p>
+                    </div>
+
+                    <div className={styles.formatsItemRow}>
+                      <p className={styles.formatsItemText}>{item.students}</p>
+
+                      <p
+                        className={`${styles.formatsItemText} ${styles.formatsItemDetails}`}
+                        onClick={() => setIsCardRevealed(index)}
+                      >
+                        Ver detalles
+                      </p>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           ))}
         </div>
