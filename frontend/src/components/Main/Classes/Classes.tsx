@@ -168,7 +168,11 @@ function Classes() {
             {methodology.items.map((item, index) => (
               <button
                 onClick={() => setActiveMethodology(index)}
-                className={styles.methodologyButton}
+                className={`${styles.methodologyButton} ${
+                  activeMethodology === index
+                    ? styles.methodologyButtonActive
+                    : ""
+                }`}
               >
                 {item.button}
               </button>
@@ -179,12 +183,14 @@ function Classes() {
               <p className={styles.methodologyInformationTitle}>
                 {methodology.items[activeMethodology].title}
               </p>
-              <p className={styles.methodologyInformationParagraph}>
-                {methodology.items[activeMethodology].firstParagraph}
-              </p>
-              <p className={styles.methodologyInformationParagraph}>
-                {methodology.items[activeMethodology].secondParagraph}
-              </p>
+              <div className={styles.methodologyInformationText}>
+                <p className={styles.methodologyInformationParagraph}>
+                  {methodology.items[activeMethodology].firstParagraph}
+                </p>
+                <p className={styles.methodologyInformationParagraph}>
+                  {methodology.items[activeMethodology].secondParagraph}
+                </p>
+              </div>
             </div>
             <img
               className={styles.methodologyPhoto}
@@ -205,7 +211,9 @@ function Classes() {
             <p className={styles.faqButtonsTitle}>{faq.buttonsTitle}</p>
             {faq.items.map((item, index) => (
               <button
-                className={styles.faqButton}
+                className={`${styles.faqButton} ${
+                  activeQuestion === index ? styles.faqButtonActive : ""
+                }`}
                 onClick={() => setActiveQuestion(index)}
               >
                 {item.button}
@@ -216,22 +224,26 @@ function Classes() {
             {faq.items[activeQuestion].questions.map((item, index) => (
               <div
                 key={item.question}
-                className={`${styles.faqQuestion} ${
-                  isQuestionActive === index ? styles.faqQuestionActive : ""
-                }`}
+                className={styles.faqQuestion}
                 onClick={() =>
                   setIsQuestionActive(isQuestionActive === index ? null : index)
                 }
               >
                 <div className={styles.faqQuestionUpperContainer}>
                   <div className={styles.faqQuestionLeftContainer}>
-                    {" "}
                     <img
                       className={styles.faqQuestionIcon}
                       src={questionIcon}
                       alt=""
                     />{" "}
-                    <p className={styles.faqQuestionTitle}>{item.question}</p>
+                    <div className={styles.faqQuestionContainerSpecial}>
+                      <p className={styles.faqQuestionTitle}>{item.question}</p>
+                      {isQuestionActive === index && (
+                        <p className={styles.faqQuestionAnswer}>
+                          {item.answer}
+                        </p>
+                      )}
+                    </div>
                   </div>
                   <img
                     className={`${styles.faqQuestionExpandIcon} ${
@@ -243,9 +255,6 @@ function Classes() {
                     alt=""
                   />
                 </div>
-                {isQuestionActive === index && (
-                  <p className={styles.faqQuestionAnswer}>{item.answer}</p>
-                )}
               </div>
             ))}
           </div>

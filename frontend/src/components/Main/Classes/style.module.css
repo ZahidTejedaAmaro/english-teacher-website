@@ -375,7 +375,7 @@
 .methodologyContent {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
 }
 
 .methodologyButtons {
@@ -390,6 +390,12 @@
   border: none;
   background-color: var(--background-secondary);
   color: var(--text-secondary);
+  height: 60px;
+}
+
+.methodologyButtonActive {
+  background-color: var(--accent-primary);
+  color: var(--text-inverse);
 }
 
 .methodologyButton:hover {
@@ -410,11 +416,19 @@
 
 .methodologyInformationTitle {
   font-size: 36px;
+  margin: 0 0 24px;
   font-weight: 700;
+}
+
+.methodologyInformationText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .methodologyInformationParagraph {
   font-size: 24px;
+  margin: 0;
 }
 
 .methodologyPhoto {
@@ -423,22 +437,81 @@
   border-radius: 12px;
 }
 
+@media screen and (max-width: 800px) {
+  .methodologyButtons {
+    gap: 8px;
+  }
+
+  .methodologyButton {
+    font-size: 20px;
+  }
+
+  .methodologyBottomContainer {
+    gap: 16px;
+
+    padding: clamp(8px, 2.36vw, 24px);
+  }
+
+  .methodologyInformationTitle {
+    font-size: clamp(26px, 5.45vw, 30px);
+    margin: 0 0 16px;
+  }
+
+  .methodologyInformationParagraph {
+    font-size: clamp(17px, 3.27vw, 18px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .methodologyContent {
+    gap: 4px;
+  }
+
+  .methodologyButtons {
+    gap: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .methodologyButton {
+    font-size: 16px;
+  }
+
+  .methodologyBottomContainer {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .methodologyInformationTitle {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .methodologyInformationText {
+    gap: 8px;
+  }
+
+  .methodologyInformationParagraph {
+    font-size: 16px;
+  }
+}
+
 /* #endregion */
 
 /* #region FAQ */
 
 .faqContent {
   display: flex;
-
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   gap: 32px;
 }
 
 .faqButtons {
-  flex: 2;
+  flex: 3;
   display: flex;
   flex-direction: column;
+
   gap: 32px;
 }
 
@@ -452,24 +525,30 @@
   background-color: transparent;
   border: none;
   text-align: left;
+
   color: var(--text-secondary);
   font-size: 24px;
+  padding: 0;
 }
 
 .faqButton:hover {
   cursor: pointer;
 }
+.faqButtonActive {
+  font-weight: 700;
+}
 
 .faqQuestions {
-  flex: 4;
+  flex: 7;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+
+  gap: 8px;
 }
 
 .faqQuestion {
   background-color: var(--background-secondary);
-  padding: 16px;
+  padding: 24px;
   border-radius: 12px;
 }
 
@@ -480,7 +559,13 @@
 .faqQuestionUpperContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.faqQuestionContainerSpecial {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .faqQuestionLeftContainer {
@@ -490,11 +575,12 @@
 
 .faqQuestionIcon {
   width: 28px;
+
   height: 28px;
 }
 
 .faqQuestionTitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
 }
@@ -505,6 +591,58 @@
 
 .faqQuestionAnswer {
   font-size: 18px;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .faqContent {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .faqButtons {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .faqButtonsTitle {
+    font-size: 16px;
+  }
+
+  .faqButton {
+    font-size: 20px;
+  }
+
+  .faqQuestion {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .faqButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .faqButtonsTitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .faqButton {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .faqQuestionTitle {
+    font-size: 16px;
+  }
+
+  .faqQuestionAnswer {
+    font-size: 16px;
+  }
 }
 
 /* #endregion */
