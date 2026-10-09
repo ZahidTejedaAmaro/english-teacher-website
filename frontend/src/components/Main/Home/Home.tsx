@@ -28,8 +28,6 @@ import businessImage from "../../../assets/images/studentsSection/business.jpg";
 
 import examsImage from "../../../assets/images/studentsSection/exams.jpg";
 
-import travelImage from "../../../assets/images/studentsSection/travel.jpg";
-
 import rightArrowIcon from "../../../assets/icons/rightArrowIcon.svg";
 
 import leftArrowIcon from "../../../assets/icons/leftArrowIcon.svg";
@@ -62,7 +60,7 @@ function Home() {
   return (
     <>
       <section className={styles.heroSection}>
-        <p className={styles.heroEyebrow}>HOLA COMO ESTAS</p>
+        <p className={styles.heroEyebrow}>{hero.eyebrow}</p>
 
         <h1 className={styles.heroTitle}>{hero.title}</h1>
 
@@ -98,8 +96,6 @@ function Home() {
           <p className={styles.factDescription}>{fact.description}</p>
 
           <div className={styles.factCTA}>
-            <p className={styles.factCTAText}>{fact.ctaText}</p>
-
             <Link to="#" className={styles.factCTAButton}>
               {fact.ctaButton}
             </Link>

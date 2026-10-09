@@ -20,10 +20,9 @@ export const es = {
     },
 
     fact: {
-      title: "Aprender ingles ayuda",
+      title: "Rompiendo fronteras y abriendo nuevos horizontes",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget convallis mi. Aenean tristique lectus eu tincidunt lobortis.",
-      ctaText: "¿Listo para empezar?",
+        "¿Sabías que el inglés puede aumentar tus oportunidades profesionales? Un estudio publicado en México encontró que dominar el inglés como segundo idioma se asociaba con una ventaja salarial estimada del 19.4 %. Aprender inglés puede ayudarte a ampliar tus horizontes laborales, acceder a nuevas oportunidades y desarrollar habilidades valiosas para tu futuro. Cada paso que das al aprender un idioma puede acercarte a tus metas personales y profesionales.",
       ctaButton: "Agendar clase",
     },
 
@@ -74,10 +73,10 @@ export const es = {
           image: kidsImage,
         },
         {
-          title: "Docentes",
+          title: "Viaje",
           keywords: "Profesores",
           description:
-            "Fortalece tus habilidades lingüísticas y pedagógicas para enseñar inglés con mayor confianza.",
+            "Aprende a comunicarte en inglés durante tus viajes y disfruta cada experiencia con mayor seguridad e independencia.",
           button: "Conoce más",
           image: kidsImage,
         },
@@ -93,32 +92,32 @@ export const es = {
         {
           title: "Aprendizaje personalizado",
           description:
-            "Cada alumno es único. Diseño clases que se adaptan a la edad, los objetivos, el estilo de aprendizaje y el ritmo de cada alumno para garantizar un progreso significativo.",
+            "Clases diseñadas según tu nivel, tus objetivos y tu forma de aprender para que avances de manera efectiva.",
         },
         {
           title: "Aprende a tu propio ritmo",
           description:
-            "Cada alumno es único. Diseño clases que se adaptan a la edad, los objetivos, el estilo de aprendizaje y el ritmo de cada alumno para garantizar un progreso significativo.",
+            "Avanza a tu ritmo, refuerza los temas que más necesitas y desarrolla tus habilidades sin presiones innecesarias.",
         },
         {
-          title: "Inglés práctico",
+          title: "Inglés para la vida real",
           description:
-            "Cada alumno es único. Diseño clases que se adaptan a la edad, los objetivos, el estilo de aprendizaje y el ritmo de cada alumno para garantizar un progreso significativo.",
+            "Practica situaciones cotidianas para desenvolverte con mayor facilidad en conversaciones, viajes y nuevas experiencias.",
         },
         {
           title: "Seguimiento de tu progreso",
           description:
-            "Cada alumno es único. Diseño clases que se adaptan a la edad, los objetivos, el estilo de aprendizaje y el ritmo de cada alumno para garantizar un progreso significativo.",
+            "Identifica tus avances, reconoce las áreas que puedes mejorar y trabaja con objetivos claros en cada etapa de tu aprendizaje.",
         },
         {
           title: "Preparación para exámenes",
           description:
-            "Cada alumno es único. Diseño clases que se adaptan a la edad, los objetivos, el estilo de aprendizaje y el ritmo de cada alumno para garantizar un progreso significativo.",
+            "Refuerza tus conocimientos y practica las habilidades necesarias para afrontar exámenes de inglés con mayor preparación.",
         },
         {
           title: "Confianza al comunicarte",
           description:
-            "Cada alumno es único. Diseño clases que se adaptan a la edad, los objetivos, el estilo de aprendizaje y el ritmo de cada alumno para garantizar un progreso significativo.",
+            "Desarrolla tu fluidez, mejora tu pronunciación y expresa tus ideas en inglés con mayor seguridad.",
         },
       ],
       cta: "Explorar classes →",
@@ -536,6 +535,95 @@ export const es = {
           ],
         },
       ],
+    },
+  },
+  book: {
+    hero: {
+      eyebrow: "A SIMPLE WAY TO BEGIN",
+      title: "Everything you need to start learning with confidence",
+      description:
+        "Integer commodo lacus ut magna aliquam, ac consectetur sapien hendrerit. Integer scelerisque vestibulum quam auctor suscipit. Vestibulum aliquet metus vitae bibendum pulvinar. Integer commodo lacus ut magna aliquam, ac consectetur.",
+      button: "Book your class →",
+      items: [
+        {
+          number: 1,
+          title: "Find Your Class",
+          description:
+            "Choose the class that best fits your age, goals, and current level of English. Explore the different options and find the learning experience that feels right for you.",
+        },
+        {
+          number: 2,
+          title: "Book Your Free Trial Class",
+          description:
+            "Choose a convenient date and time for your first class. Your trial lesson is an opportunity to meet your teacher and take the first step toward improving your English.",
+        },
+        {
+          number: 3,
+          title: "Experience the Method",
+          description:
+            "Discover how lessons are designed around your needs, goals, and learning style. Get to know the teaching approach and experience what your classes could look like.",
+        },
+        {
+          number: 4,
+          title: "Get Your Learning Plan",
+          description:
+            "After your trial class, receive a personalized learning plan based on your goals, level, and areas for improvement, giving you a clear path forward.",
+        },
+      ],
+    },
+    faq: {
+      eyebrow: "FAQ",
+      title: "What to know before your first class",
+      description:
+        "Integer commodo lacus ut magna aliquam, ac consectetur sapien hendrerit. Integer scelerisque vestibulum quam auctor suscipit. Vestibulum aliquet metus vitae bibendum pulvinar. ",
+      items: [
+        {
+          number: "1",
+          title: "How do I track my progress?",
+          description:
+            "You can track your progress through regular practice, feedback, and periodic evaluations.",
+        },
+        {
+          number: "2",
+          title: "How often should I attend classes?",
+          description:
+            "For consistent progress, attending one or two classes per week is recommended.",
+        },
+        {
+          number: "3",
+          title: "Are classes suitable for beginners?",
+          description:
+            "Yes, classes can be adapted to your current level, goals, and learning needs.",
+        },
+        {
+          number: "4",
+          title: "Can I choose my class schedule?",
+          description:
+            "You can choose from the available schedules and find a time that works best for you.",
+        },
+        {
+          number: "5",
+          title: "What materials will I need?",
+          description:
+            "You will only need a device with internet access and a willingness to practice and learn.",
+        },
+        {
+          number: "6",
+          title: "How can I book a class?",
+          description:
+            "You can book a class by choosing an available schedule and completing the booking process.",
+        },
+      ],
+      motivation: {
+        title: "The goal isn't perfect English. It's confident English.",
+        description:
+          "Through meaningful practice and personalized guidance, you'll develop the skills and confidence to communicate more naturally.",
+      },
+    },
+    motivation: {
+      title: "Your English journey starts here.",
+      description:
+        "With personalized guidance and meaningful practice, each class brings you one step closer to communicating with confidence. ",
     },
   },
 };

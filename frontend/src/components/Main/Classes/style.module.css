@@ -621,6 +621,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .faqContent {
+    gap: 8px;
+  }
+
   .faqButtons {
     display: grid;
     grid-template-columns: 1fr 1fr;

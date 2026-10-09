@@ -1,3 +1,571 @@
-.contact {
-  background-color: #ffffff;
+.heroSection {
+  display: flex;
+  gap: 24px;
 }
+
+.heroIntroContainer {
+  flex: 1;
+}
+
+.heroEyebrow {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--accent-primary);
+}
+
+.heroTitle {
+  font-size: 60px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.heroDescription {
+  font-size: 24px;
+  margin: 0 0 48px;
+  color: var(--text-secondary);
+}
+
+.heroButton {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-inverse);
+  background-color: var(--accent-primary);
+}
+.heroGrid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.heroItem {
+  display: flex;
+  gap: 24px;
+}
+
+.heroItemNumber {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: var(--background-inverse);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-inverse);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroItemText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heroItemTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.heroItemDescription {
+  margin: 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .heroSection {
+    gap: 16px;
+  }
+
+  .heroEyebrow {
+    font-size: 18px;
+  }
+
+  .heroTitle {
+    font-size: 36px;
+  }
+
+  .heroDescription {
+    font-size: 18px;
+    margin: 0 0 24px;
+  }
+
+  .heroButton {
+    font-size: 18px;
+  }
+
+  .heroGrid {
+    gap: 16px;
+  }
+
+  .heroItem {
+    gap: 16px;
+  }
+
+  .heroItemNumber {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+  }
+
+  .heroItemTitle {
+    font-size: 20px;
+  }
+
+  .heroItemDescription {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .heroSection {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heroEyebrow {
+    font-size: 14px;
+  }
+
+  .heroTitle {
+    font-size: 30px;
+  }
+
+  .heroDescription {
+    font-size: 16px;
+    margin: 0 0 24px;
+  }
+
+  .heroButton {
+    font-size: 16px;
+  }
+
+  .heroGrid {
+    gap: 8px;
+  }
+
+  .heroItem {
+    gap: 8px;
+  }
+
+  .heroItemTitle {
+    font-size: 18px;
+  }
+
+  .heroItemDescription {
+    font-size: 16px;
+  }
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.faqItem {
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--border-default);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faqItemTitleContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.faqItemNumber {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--accent-primary);
+  color: var(--text-inverse);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.faqItemTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+  align-self: center;
+}
+
+.faqItemDescription {
+  font-size: 18px;
+  color: var(--text-seceondary);
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .faqItem {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .faqItemTitleContainer {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+  }
+
+  .faqItemTitle {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .faqItemDescription {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .faqGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .faqItem {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .faqItemTitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .faqItemDescription {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+/* #region Philosophy */
+
+.philosophySection {
+  display: flex;
+  gap: 32px;
+}
+
+.philosophyContent {
+  flex: 1;
+}
+
+.philosophyEyebrow {
+  margin: 0;
+  color: var(--accent-primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.philosophyTitle {
+  margin: 8px 0 32px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.philosophyTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.philosophyText {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 24px;
+}
+
+.philosophyButton {
+  display: block;
+  margin-top: 32px;
+  color: var(--accent-primary);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.philosophyPhotoContainer {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.philosophyPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .philosophySection {
+    gap: 16px;
+  }
+
+  .philosophyEyebrow {
+    font-size: 14px;
+  }
+
+  .philosophyTitle {
+    margin: 8px 0 16px;
+    font-size: 30px;
+  }
+
+  .philosophyTextContainer {
+    gap: 16px;
+  }
+
+  .philosophyText {
+    font-size: 18px;
+  }
+
+  .philosophyButton {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .philosophySection {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .philosophyEyebrow {
+    font-size: 14px;
+  }
+
+  .philosophyTitle {
+    margin: 8px 0 16px;
+    font-size: 20px;
+  }
+
+  .philosophyTextContainer {
+    gap: 8px;
+  }
+
+  .philosophyText {
+    font-size: 16px;
+  }
+
+  .philosophyButton {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+}
+
+/* #endregion */
+
+/* #region Values */
+
+.valuesGrid {
+  display: flex;
+  gap: 16px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.valuesItem {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 16px 32px;
+  border: 1px solid var(--border-default);
+  border-radius: 20px;
+  background-color: var(--background-tertiary);
+  text-align: center;
+}
+
+.valueIcon {
+  width: 120px;
+  height: 120px;
+}
+
+.valueTitle {
+  margin: 32px 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.valueDescription {
+  max-width: 200px;
+  margin: 0;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .valuesItem {
+    padding: 16px 8px;
+  }
+
+  .valueIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .valueTitle {
+    font-size: 18px;
+  }
+
+  .valueDescription {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .valuesGrid {
+    gap: 4px;
+  }
+
+  .valuesItem {
+    padding: 16px 8px;
+  }
+
+  .valueIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .valueTitle {
+    margin: 16px 0 8px;
+    font-size: 16px;
+  }
+
+  .valueDescription {
+    font-size: 16px;
+  }
+}
+
+/* #endregion */
+
+/* #region Motivation */
+
+.motivationSection {
+  display: flex;
+  padding: 48px;
+  border-radius: 12px;
+  background-color: var(--background-tertiary);
+}
+
+.motivationPhotoContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.motivationPhoto {
+  width: 350px;
+  height: 350px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.motivationContent {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.motivationTitle {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.motivationDescription {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .motivationSection {
+    padding: 48px 24px;
+  }
+
+  .motivationPhoto {
+    width: 250px;
+    height: 250px;
+  }
+
+  .motivationTitle {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .motivationDescription {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .motivationSection {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .motivationContent {
+    gap: 8px;
+  }
+
+  .motivationTitle {
+    margin: 16px 0 0;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .motivationPhoto {
+    width: 150px;
+    height: 150px;
+  }
+
+  .motivationTitle {
+    font-size: 20px;
+  }
+
+  .motivationDescription {
+    font-size: 16px;
+  }
+}
+
+/* #endregion */
