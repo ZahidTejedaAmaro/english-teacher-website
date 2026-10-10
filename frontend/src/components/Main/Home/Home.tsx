@@ -1,4 +1,3 @@
-import typography from "../../../styles/typography.module.css";
 
 import { useState } from "react";
 

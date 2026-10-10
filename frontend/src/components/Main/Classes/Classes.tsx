@@ -6,7 +6,7 @@ import CTA from "../CTA/CTA";
 import questionIcon from "../../../assets/hero.png";
 import expandIcon from "../../../assets/icons/expandIcon.svg";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // import { es } from "../../../locales/es";
 // import { en } from "../../../locales/en";

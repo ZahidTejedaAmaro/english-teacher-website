@@ -1,4 +1,4 @@
-import typography from "../../../styles/typography.module.css";
+// import typography from "../../../styles/typography.module.css";
 import philosophyImage from "../../../assets/images/profile.png";
 
 import BackgroundItem from "./Background/Background";

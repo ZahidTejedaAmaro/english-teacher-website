@@ -16,7 +16,7 @@ export const es = {
         "Desarrolla habilidades de inglés para situaciones reales mediante clases personalizadas diseñadas alrededor de tus objetivos, tu horario y tu ritmo de aprendizaje.",
       aboutClasses: "Sobre nuestras clases",
       bookClass: "Agendar una clase",
-      scroll: "DESCUBRE MAS",
+      scroll: "DESCUBRE MÁS",
     },
 
     fact: {
@@ -58,7 +58,7 @@ export const es = {
         },
         {
           title: "Adultos",
-          keywords: "18+ años",
+          keywords: "18 años o más",
           description:
             "Mejora tu inglés y gana la confianza necesaria para comunicarte en situaciones reales.",
           button: "Conoce más",
@@ -73,8 +73,8 @@ export const es = {
           image: kidsImage,
         },
         {
-          title: "Viaje",
-          keywords: "Profesores",
+          title: "Viajeros",
+          keywords: "Inglés para viajar",
           description:
             "Aprende a comunicarte en inglés durante tus viajes y disfruta cada experiencia con mayor seguridad e independencia.",
           button: "Conoce más",
@@ -120,7 +120,7 @@ export const es = {
             "Desarrolla tu fluidez, mejora tu pronunciación y expresa tus ideas en inglés con mayor seguridad.",
         },
       ],
-      cta: "Explorar classes →",
+      cta: "Explorar clases →",
     },
 
     stats: {
@@ -128,10 +128,10 @@ export const es = {
       description:
         "Cada lección está diseñada alrededor de tus objetivos, tu horario y un inglés práctico que puedes usar todos los días.",
       items: [
-        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMPROMETIDA CON TU ÉXITO" },
+        { title: "100%", description: "COMPROMETIDA CON TU ÉXITO" },
+        { title: "100%", description: "COMPROMETIDA CON TU ÉXITO" },
+        { title: "100%", description: "COMPROMETIDA CON TU ÉXITO" },
       ],
     },
 
@@ -175,455 +175,469 @@ export const es = {
 
   about: {
     hero: {
-      title: "More than learning English. You have to feel it.",
+      title: "Más que aprender inglés, tienes que sentirlo.",
       firstParagraph:
-        "Hi! I'm Yvette, an English teacher with over 24 years of experience helping students build confidence and achieve their language goals.",
+        "¡Hola! Soy Yvette, profesora de inglés con más de 24 años de experiencia ayudando a estudiantes a desarrollar su confianza y alcanzar sus objetivos lingüísticos.",
       secondParagraph: {
-        bold: "Teaching English is more than my profession—it's my passion.",
+        bold: "Enseñar inglés es más que mi profesión: es mi pasión.",
         normal:
-          "Throughout my career, I have worked with children, teenagers, adults, and teachers, creating engaging, meaningful, and student-centered learning experiences that inspire confidence and a genuine love for the English language.",
+          "A lo largo de mi carrera, he trabajado con niños, adolescentes, adultos y docentes, creando experiencias de aprendizaje atractivas, significativas y centradas en el estudiante, que fomentan la confianza y un verdadero gusto por el idioma inglés.",
       },
-      button: "Book your class",
+      button: "Agenda tu clase",
       name: "Ivette Castro",
-      profession: "English teacher",
+      profession: "Profesora de inglés",
     },
 
     background: {
-      eyebrow: "QUALIFICATIONS & EXPERIENCE",
-      title: "My journey",
-      academicTitle: "Academic Background",
+      eyebrow: "FORMACIÓN Y EXPERIENCIA",
+      title: "Mi trayectoria",
+      academicTitle: "Formación académica",
       academic: [
         {
-          title: "English Language Teaching",
-          type: "BACHELOR’S DEGREE",
+          title: "Enseñanza del idioma inglés",
+          type: "LICENCIATURA",
           description:
-            "Focused on English language teaching, classroom methodology, lesson planning, and effective communication strategies.",
+            "Enfocada en la enseñanza del idioma inglés, la metodología de enseñanza, la planificación de clases y las estrategias de comunicación efectiva.",
           date: "2022 - 2025",
         },
         {
-          title: "Primary Education",
-          type: "BACHELOR’S DEGREE",
+          title: "Educación primaria",
+          type: "LICENCIATURA",
           description:
-            "Developed a strong foundation in education, child development, classroom management, and student-centered learning approaches, with practical experience working with young learners. Completed all three Teaching Knowledge Test modules, covering language and the language learning process, lesson planning and resources, and classroom management.",
+            "Desarrollé una sólida formación en educación, desarrollo infantil, gestión del aula y enfoques de aprendizaje centrados en el estudiante, con experiencia práctica trabajando con niños. Completé los tres módulos del Examen de Conocimientos Docentes (TKT), que abarcan el idioma y el proceso de aprendizaje, la planificación de clases y los recursos didácticos, así como la gestión del aula.",
           date: "2018 - 2022",
         },
       ],
 
-      qualificationsTitle: "Professional Qualifications",
+      qualificationsTitle: "Certificaciones profesionales",
       qualifications: [
         {
-          title: "Cambridge Speaking Examiner",
-          type: "CERTIFICATION",
+          title: "Examinadora oral de Cambridge",
+          type: "CERTIFICACIÓN",
           description:
-            "Qualified to assess speaking performance in Cambridge English examinations.",
+            "Capacitada para evaluar el desempeño oral en los exámenes de inglés de Cambridge.",
           date: "2025",
         },
         {
           title: "C1 Advanced (CAE)",
-          type: "CERTIFICATION",
+          type: "CERTIFICACIÓN",
           description:
-            "Demonstrated advanced English proficiency through the Cambridge C1 Advanced qualification, with a focus on effective communication and language accuracy.",
+            "Acredité un nivel avanzado de inglés mediante la certificación C1 Advanced de Cambridge, con énfasis en la comunicación efectiva y la precisión lingüística.",
           date: "2024",
         },
         {
-          title: "TKT Modules 1–3",
-          type: "CERTIFICATION",
+          title: "Módulos 1–3 del TKT",
+          type: "CERTIFICACIÓN",
           description:
-            "Completed all three Teaching Knowledge Test modules, covering language and the language learning process, lesson planning and resources, and classroom management. Completed all three Teaching Knowledge Test modules, covering language and the language learning process, lesson planning and resources, and classroom management.",
+            "Completé los tres módulos del Examen de Conocimientos Docentes (TKT), que abarcan el idioma y el proceso de aprendizaje, la planificación de clases y los recursos didácticos, así como la gestión del aula.",
           date: "2023",
         },
         {
           title: "ICELT",
-          type: "CERTIFICATION",
+          type: "CERTIFICACIÓN",
           description:
-            "Completed the International Certificate in English Language Teaching, developing practical skills in lesson planning, classroom management, teaching methodology, and reflective practice.",
+            "Completé el Certificado Internacional de Enseñanza del Idioma Inglés, desarrollando habilidades prácticas de planificación de clases, gestión del aula, metodología de enseñanza y práctica reflexiva.",
           date: "2022",
         },
       ],
     },
+
     philosophy: {
-      eyebrow: "PHILOSOPHY",
-      title: "What actually matters in every lesson",
+      eyebrow: "FILOSOFÍA",
+      title: "Lo que realmente importa en cada clase",
       firstParagraph:
-        "My teaching philosophy is built around creating a supportive and purposeful learning experience. I believe students learn best when they feel comfortable exploring, asking questions, and expressing themselves without fear of making mistakes.",
+        "Mi filosofía de enseñanza se basa en crear una experiencia de aprendizaje enriquecedora y con propósito. Creo que los estudiantes aprenden mejor cuando se sienten cómodos explorando, haciendo preguntas y expresándose sin miedo a cometer errores.",
       secondParagraph:
-        "Every lesson is designed to encourage curiosity, build confidence, and support meaningful progress. My goal is to give students the skills and independence they need to use English naturally and confidently beyond the classroom.",
+        "Cada clase está diseñada para fomentar la curiosidad, desarrollar la confianza y favorecer un progreso significativo. Mi objetivo es brindar a los estudiantes las habilidades y la independencia necesarias para utilizar el inglés de forma natural y segura más allá del aula.",
     },
+
     values: {
-      eyebrow: "VALUES",
-      title: "What I bring to every lesson",
+      eyebrow: "VALORES",
+      title: "Lo que aporto a cada clase",
       description:
-        "Every lesson is designed to be more than just learning English. I bring experience, curiosity, and a genuine commitment to creating a supportive environment where you can build confidence, stay motivated, and make meaningful progress.",
+        "Cada clase está diseñada para ofrecer mucho más que aprender inglés. Aporto experiencia, curiosidad y un compromiso genuino con la creación de un entorno de apoyo donde puedas desarrollar tu confianza, mantenerte motivado y lograr avances significativos.",
       items: [
         {
           icon: kidsImage,
-          title: "Confidence",
+          title: "Confianza",
           description:
-            "Helping students find their voice and communicate with confidence.",
+            "Ayudo a los estudiantes a encontrar su propia voz y comunicarse con seguridad.",
         },
         {
           icon: kidsImage,
-          title: "Communication",
+          title: "Comunicación",
           description:
-            "Encouraging meaningful conversations and clear self-expression.",
+            "Fomento las conversaciones significativas y la expresión clara de ideas.",
         },
         {
           icon: kidsImage,
-          title: "Personal Growth",
+          title: "Crecimiento personal",
           description:
-            "Supporting continuous learning through practice and dedication.",
+            "Impulso el aprendizaje continuo mediante la práctica y la dedicación.",
         },
         {
           icon: kidsImage,
-          title: "Personalized Support",
+          title: "Apoyo personalizado",
           description:
-            "Adapting each lesson to the student's needs, goals, and progress.",
+            "Adapto cada clase a las necesidades, los objetivos y el progreso de cada estudiante.",
         },
       ],
     },
+
     motivation: {
-      title: "The goal isn't perfect English. It's confident English.",
+      title:
+        "El objetivo no es hablar inglés perfecto, sino hablarlo con confianza.",
       description:
-        "Through meaningful practice and personalized guidance, you'll develop the skills and confidence to communicate more naturally.",
+        "Mediante la práctica significativa y la orientación personalizada, desarrollarás las habilidades y la confianza necesarias para comunicarte de forma más natural.",
     },
   },
+
   classes: {
     hero: {
-      eyebrow: "FIND YOUR FIT",
-      title: "Classes for everyone",
+      eyebrow: "ENCUENTRA TU CLASE IDEAL",
+      title: "Clases para todos",
       description:
-        "No two learners are the same. I understand that every student has their own needs and goals. That’s why I offer flexible classes tailored to different learning styles, needs, and goals.",
+        "No hay dos estudiantes iguales. Entiendo que cada persona tiene sus propias necesidades y objetivos. Por eso ofrezco clases flexibles adaptadas a diferentes estilos de aprendizaje, necesidades y metas.",
       buttonsTitle: "Tipo de estudiante",
       items: [
         {
-          title: "kids",
+          title: "Niños",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget convallis mi. Aenean tristique lectus eu tincidunt lobortis. ",
+            "Ayudamos a los niños a desarrollar sus habilidades en inglés mediante actividades apropiadas para su edad que fomentan la confianza, la curiosidad y la comunicación.",
           image: kidsImage,
         },
         {
-          title: "teenagers",
+          title: "Adolescentes",
           description:
-            "Build confidence and improve communication skills.Learn English through fun and engaging activities.Learn English through fun and engaging activities.Learn English through fun and engaging activities.",
+            "Fortalece tu confianza y mejora tus habilidades de comunicación. Aprende inglés mediante actividades dinámicas, interesantes y adaptadas a tus intereses.",
           image: kidsImage,
         },
         {
-          title: "students",
+          title: "Estudiantes",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget convallis mi. Aenean tristique lectus eu tincidunt lobortis. ",
+            "Desarrolla tus habilidades en inglés para tus estudios, proyectos académicos y futuras oportunidades profesionales.",
           image: kidsImage,
         },
         {
-          title: "adults",
+          title: "Adultos",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula velit, elementum eu pretium non, fermentum nec nulla. Morbi vitae ante consectetur, hendrerit elit ac, vulputate nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget convallis mi. Aenean tristique lectus eu tincidunt lobortis. ",
+            "Mejora tu inglés con clases adaptadas a tu nivel, tus objetivos y las situaciones reales en las que necesitas comunicarte.",
           image: kidsImage,
         },
         {
-          title: "professionals",
+          title: "Profesionales",
           description:
-            "Strengthen your English for the workplace and beyond.Learn English through fun and engaging activities.Learn English through fun and engaging activities.Learn English through fun and engaging activities.",
+            "Refuerza tu inglés para el entorno laboral y más allá. Desarrolla las habilidades necesarias para comunicarte con seguridad en situaciones profesionales.",
           image: kidsImage,
         },
         {
-          title: "teachers",
+          title: "Docentes",
           description:
-            "Expand your teaching skills and English proficiency.Learn English through fun and engaging activities.Learn English through fun and engaging activities.",
+            "Amplía tus habilidades docentes y mejora tu dominio del inglés mediante la práctica y estrategias de enseñanza efectivas.",
           image: kidsImage,
         },
       ],
     },
+
     stats: {
       title: "¿Qué ofrezco?",
       description:
         "Cada lección está diseñada alrededor de tus objetivos, tu horario y un inglés práctico que puedes usar todos los días.",
       items: [
-        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
-        { title: "100%", description: "COMMITED TO YOUR SUCCESS" },
+        { title: "100%", description: "COMPROMETIDA CON TU ÉXITO" },
+        { title: "100%", description: "COMPROMETIDA CON TU ÉXITO" },
+        { title: "100%", description: "COMPROMETIDA CON TU ÉXITO" },
+        { title: "100%", description: "COMPROMETIDA CON TU ÉXITO" },
       ],
     },
+
     formats: {
-      eyebrow: "OUR CLASS FORMATS",
-      title: "Modern English classes for an active learning",
+      eyebrow: "MODALIDADES DE CLASE",
+      title: "Clases modernas de inglés para un aprendizaje activo",
       description:
-        "Integer commodo lacus ut magna aliquam, ac consectetur sapien hendrerit. Integer scelerisque vestibulum quam auctor suscipit. Vestibulum aliquet metus vitae bibendum pulvinar. ",
+        "Ofrezco distintas modalidades de clase para que practiques inglés de manera activa, desarrolles tus habilidades de comunicación y avances de acuerdo con tus objetivos.",
       items: [
         {
           image: kidsImage,
-          title: "One-to-one class",
-          modality: "Online",
-          students: "1 Student",
-          expandedTitle: "Personalized learning",
+          title: "Clase individual",
+          modality: "En línea",
+          students: "1 estudiante",
+          expandedTitle: "Aprendizaje personalizado",
           expandedDescription:
-            "A personalized class designed around your goals, level, and learning pace.",
+            "Una clase personalizada diseñada según tus objetivos, tu nivel y tu ritmo de aprendizaje.",
         },
         {
           image: kidsImage,
-          title: "Small group class",
-          modality: "In person",
-          students: "2–5 Students",
-          expandedTitle: "Learn together",
+          title: "Clase en grupo pequeño",
+          modality: "Presencial",
+          students: "2–5 estudiantes",
+          expandedTitle: "Aprende en compañía",
           expandedDescription:
-            "Practice English in a small group while developing communication and confidence.",
+            "Practica inglés en un grupo pequeño mientras desarrollas tus habilidades de comunicación y confianza.",
         },
         {
           image: kidsImage,
-          title: "Conversation class",
-          modality: "Online",
-          students: "1–4 Students",
-          expandedTitle: "Speak with confidence",
+          title: "Clase de conversación",
+          modality: "En línea",
+          students: "1–4 estudiantes",
+          expandedTitle: "Habla con confianza",
           expandedDescription:
-            "Improve your fluency through guided conversations and practical speaking activities.",
+            "Mejora tu fluidez mediante conversaciones guiadas y actividades prácticas de expresión oral.",
         },
         {
           image: kidsImage,
-          title: "Professional English",
-          modality: "In person",
-          students: "1–6 Students",
-          expandedTitle: "English for your career",
+          title: "Inglés profesional",
+          modality: "Presencial",
+          students: "1–6 estudiantes",
+          expandedTitle: "Inglés para tu carrera",
           expandedDescription:
-            "Develop the English skills you need to communicate effectively in professional environments.",
+            "Desarrolla las habilidades en inglés que necesitas para comunicarte eficazmente en entornos profesionales.",
         },
       ],
     },
+
     methodology: {
-      eyebrow: "QUALIFICATIONS & EXPERIENCE",
-      title: "Methodology",
+      eyebrow: "FORMACIÓN Y EXPERIENCIA",
+      title: "Metodología",
       description:
-        "Every lesson is designed around your goals, your schedule, and practical English you can use every day.",
+        "Cada clase está diseñada alrededor de tus objetivos, tu horario y un inglés práctico que puedes utilizar todos los días.",
       items: [
         {
-          button: "Speaking",
-          title: "Communication",
+          button: "Expresión oral",
+          title: "Comunicación",
           firstParagraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+            "Desarrolla tu capacidad para expresar ideas, participar en conversaciones y comunicarte con mayor seguridad en diferentes situaciones.",
           secondParagraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+            "Mediante conversaciones guiadas y actividades prácticas, mejorarás tu fluidez, pronunciación y confianza al hablar inglés.",
           image: kidsImage,
         },
         {
-          button: "Listening",
-          title: "Understanding",
+          button: "Comprensión auditiva",
+          title: "Comprensión",
           firstParagraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+            "Aprende a identificar ideas principales, comprender conversaciones y reconocer palabras y expresiones en inglés hablado.",
           secondParagraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+            "Practica con diferentes situaciones comunicativas para mejorar tu comprensión y desenvolverte con mayor facilidad al escuchar inglés.",
           image: kidsImage,
         },
         {
-          button: "Reading",
-          title: "Comprehension",
+          button: "Lectura",
+          title: "Comprensión lectora",
           firstParagraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+            "Desarrolla tu capacidad para comprender textos en inglés, identificar información importante y reconocer vocabulario en contexto.",
           secondParagraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+            "A través de lecturas adaptadas a tu nivel, mejorarás tu comprensión y ampliarás progresivamente tu vocabulario.",
           image: kidsImage,
         },
         {
-          button: "Writing",
-          title: "Expression",
+          button: "Escritura",
+          title: "Expresión escrita",
           firstParagraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+            "Aprende a organizar tus ideas y expresarlas por escrito con claridad, utilizando vocabulario y estructuras gramaticales adecuados.",
           secondParagraph:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique eleifend magna id laoreet. Duis sed eleifend ligula, et sodales orci.",
+            "Practica distintos tipos de textos y recibe orientación para mejorar tu precisión, coherencia y confianza al escribir en inglés.",
           image: kidsImage,
         },
       ],
     },
+
     faq: {
-      eyebrow: "FAQ",
-      title: "Everything you need to know",
+      eyebrow: "PREGUNTAS FRECUENTES",
+      title: "Todo lo que necesitas saber",
       description:
-        "Every lesson is designed around your goals, your schedule, and practical English you can use every day.",
-      buttonsTitle: "CATEGORIAS",
+        "Cada clase está diseñada alrededor de tus objetivos, tu horario y un inglés práctico que puedes utilizar todos los días.",
+      buttonsTitle: "CATEGORÍAS",
       items: [
         {
-          button: "Classes",
+          button: "Clases",
           questions: [
             {
-              question: "How long is each class?",
+              question: "¿Cuánto dura cada clase?",
               answer:
-                "Each class lasts approximately one hour, depending on the student's needs and the type of lesson.",
+                "Cada clase dura aproximadamente una hora, dependiendo de las necesidades del estudiante y del tipo de lección.",
             },
             {
-              question: "Are classes available online?",
+              question: "¿Hay clases disponibles en línea?",
               answer:
-                "Yes. Online classes are available and can be adapted to different schedules and learning goals.",
+                "Sí. Hay clases en línea que pueden adaptarse a diferentes horarios y objetivos de aprendizaje.",
             },
             {
-              question: "Are classes suitable for beginners?",
+              question: "¿Las clases son adecuadas para principiantes?",
               answer:
-                "Absolutely. Classes can be adapted to your current level, from beginner to advanced.",
+                "Por supuesto. Las clases pueden adaptarse a tu nivel actual, desde principiante hasta avanzado.",
             },
             {
-              question: "Can I choose the days and times?",
+              question: "¿Puedo elegir los días y horarios?",
               answer:
-                "Yes. Available schedules depend on the class format and current availability.",
+                "Sí. Los horarios disponibles dependen de la modalidad de clase y de la disponibilidad actual.",
             },
             {
-              question: "Do you offer one-to-one classes?",
+              question: "¿Ofreces clases individuales?",
               answer:
-                "Yes. One-to-one classes are available for students who want a more personalized learning experience.",
+                "Sí. Hay clases individuales para quienes desean una experiencia de aprendizaje más personalizada.",
             },
           ],
         },
         {
-          button: "Learning",
+          button: "Aprendizaje",
           questions: [
             {
-              question: "How do you determine my English level?",
+              question: "¿Cómo determinas mi nivel de inglés?",
               answer:
-                "Your level is evaluated through an initial assessment and a conversation about your previous learning experience.",
+                "Tu nivel se evalúa mediante una valoración inicial y una conversación sobre tu experiencia previa de aprendizaje.",
             },
             {
-              question: "What skills will I practice?",
+              question: "¿Qué habilidades practicaré?",
               answer:
-                "Classes can include speaking, listening, reading, writing, grammar, vocabulary, and pronunciation.",
+                "Las clases pueden incluir expresión oral, comprensión auditiva, lectura, escritura, gramática, vocabulario y pronunciación.",
             },
             {
-              question: "Will classes follow a specific program?",
+              question: "¿Las clases siguen un programa específico?",
               answer:
-                "The lessons are structured around your goals, level, and areas that need the most attention.",
+                "Las lecciones se estructuran de acuerdo con tus objetivos, tu nivel y las áreas que necesitan mayor atención.",
             },
             {
-              question: "How can I improve my speaking skills?",
+              question: "¿Cómo puedo mejorar mi expresión oral?",
               answer:
-                "You will have regular opportunities to practice through guided conversations, activities, and real-life situations.",
+                "Tendrás oportunidades frecuentes para practicar mediante conversaciones guiadas, actividades y situaciones de la vida real.",
             },
             {
-              question: "Can I learn English for professional purposes?",
+              question: "¿Puedo aprender inglés con fines profesionales?",
               answer:
-                "Yes. Lessons can focus on professional communication, workplace vocabulary, presentations, and other specific needs.",
+                "Sí. Las lecciones pueden centrarse en la comunicación profesional, el vocabulario laboral, las presentaciones y otras necesidades específicas.",
             },
             {
-              question: "How quickly will I see progress?",
+              question: "¿Cuánto tardaré en notar avances?",
               answer:
-                "Progress depends on your starting level, goals, consistency, and the amount of practice you do outside of class.",
+                "El progreso depende de tu nivel inicial, tus objetivos, tu constancia y la cantidad de práctica que realices fuera de clase.",
             },
           ],
         },
         {
-          button: "Booking",
+          button: "Reservaciones",
           questions: [
             {
-              question: "How can I book a class?",
+              question: "¿Cómo puedo agendar una clase?",
               answer:
-                "You can request a trial class through the booking page and choose from the available options.",
+                "Puedes solicitar una clase de prueba desde la página de reservaciones y elegir entre las opciones disponibles.",
             },
             {
-              question: "Do you offer a trial class?",
+              question: "¿Ofreces una clase de prueba?",
               answer:
-                "Yes. A trial class gives you the opportunity to experience the teaching method and discuss your learning goals.",
+                "Sí. La clase de prueba te permite conocer la metodología de enseñanza y conversar sobre tus objetivos de aprendizaje.",
             },
             {
-              question: "What happens during the trial class?",
+              question: "¿Qué sucede durante la clase de prueba?",
               answer:
-                "We discuss your goals, review your current level, and complete activities that help determine the best approach for you.",
+                "Hablaremos sobre tus objetivos, revisaremos tu nivel actual y realizaremos actividades que ayudarán a determinar el enfoque más adecuado para ti.",
             },
             {
-              question: "Do I need to prepare anything before my first class?",
+              question: "¿Necesito preparar algo antes de mi primera clase?",
               answer:
-                "No special preparation is required. Just bring your questions, goals, and willingness to practice.",
+                "No necesitas ninguna preparación especial. Solo trae tus preguntas, tus objetivos y las ganas de practicar.",
             },
             {
-              question: "Can I change my class schedule?",
+              question: "¿Puedo cambiar el horario de mi clase?",
               answer:
-                "Schedule changes can be arranged depending on availability and the notice provided.",
+                "Los cambios de horario pueden acordarse según la disponibilidad y la anticipación con la que se soliciten.",
             },
           ],
         },
       ],
     },
   },
+
   book: {
     hero: {
-      eyebrow: "A SIMPLE WAY TO BEGIN",
-      title: "Everything you need to start learning with confidence",
+      eyebrow: "UNA FORMA SENCILLA DE COMENZAR",
+      title: "Todo lo que necesitas para comenzar a aprender con confianza",
       description:
-        "Integer commodo lacus ut magna aliquam, ac consectetur sapien hendrerit. Integer scelerisque vestibulum quam auctor suscipit. Vestibulum aliquet metus vitae bibendum pulvinar. Integer commodo lacus ut magna aliquam, ac consectetur.",
-      button: "Book your class →",
+        "Comenzar a aprender inglés puede ser más sencillo de lo que imaginas. Descubre las opciones disponibles, conoce la metodología y encuentra un plan de aprendizaje adaptado a tus objetivos.",
+      button: "Agenda tu clase →",
       items: [
         {
           number: 1,
-          title: "Find Your Class",
+          title: "Encuentra tu clase",
           description:
-            "Choose the class that best fits your age, goals, and current level of English. Explore the different options and find the learning experience that feels right for you.",
+            "Elige la clase que mejor se adapte a tu edad, tus objetivos y tu nivel actual de inglés. Explora las diferentes opciones y encuentra la experiencia de aprendizaje ideal para ti.",
         },
         {
           number: 2,
-          title: "Book Your Free Trial Class",
+          title: "Agenda tu clase de prueba gratuita",
           description:
-            "Choose a convenient date and time for your first class. Your trial lesson is an opportunity to meet your teacher and take the first step toward improving your English.",
+            "Elige una fecha y un horario convenientes para tu primera clase. La sesión de prueba es una oportunidad para conocer a tu profesora y dar el primer paso para mejorar tu inglés.",
         },
         {
           number: 3,
-          title: "Experience the Method",
+          title: "Conoce la metodología",
           description:
-            "Discover how lessons are designed around your needs, goals, and learning style. Get to know the teaching approach and experience what your classes could look like.",
+            "Descubre cómo se diseñan las clases según tus necesidades, tus objetivos y tu estilo de aprendizaje. Conoce el método de enseñanza y experimenta cómo podrían ser tus clases.",
         },
         {
           number: 4,
-          title: "Get Your Learning Plan",
+          title: "Obtén tu plan de aprendizaje",
           description:
-            "After your trial class, receive a personalized learning plan based on your goals, level, and areas for improvement, giving you a clear path forward.",
+            "Después de tu clase de prueba, recibirás un plan de aprendizaje personalizado según tus objetivos, tu nivel y las áreas que puedes mejorar, con una ruta clara para continuar avanzando.",
         },
       ],
     },
+
     faq: {
-      eyebrow: "FAQ",
-      title: "What to know before your first class",
+      eyebrow: "PREGUNTAS FRECUENTES",
+      title: "Lo que debes saber antes de tu primera clase",
       description:
-        "Integer commodo lacus ut magna aliquam, ac consectetur sapien hendrerit. Integer scelerisque vestibulum quam auctor suscipit. Vestibulum aliquet metus vitae bibendum pulvinar. ",
+        "Resuelve tus dudas antes de comenzar y descubre cómo prepararte para aprovechar al máximo tu experiencia de aprendizaje.",
       items: [
         {
           number: "1",
-          title: "How do I track my progress?",
+          title: "¿Cómo puedo dar seguimiento a mi progreso?",
           description:
-            "You can track your progress through regular practice, feedback, and periodic evaluations.",
+            "Puedes dar seguimiento a tu progreso mediante la práctica regular, la retroalimentación y evaluaciones periódicas.",
         },
         {
           number: "2",
-          title: "How often should I attend classes?",
+          title: "¿Con qué frecuencia debo tomar clases?",
           description:
-            "For consistent progress, attending one or two classes per week is recommended.",
+            "Para lograr avances constantes, se recomienda tomar una o dos clases por semana.",
         },
         {
           number: "3",
-          title: "Are classes suitable for beginners?",
+          title: "¿Las clases son adecuadas para principiantes?",
           description:
-            "Yes, classes can be adapted to your current level, goals, and learning needs.",
+            "Sí. Las clases pueden adaptarse a tu nivel actual, tus objetivos y tus necesidades de aprendizaje.",
         },
         {
           number: "4",
-          title: "Can I choose my class schedule?",
+          title: "¿Puedo elegir el horario de mis clases?",
           description:
-            "You can choose from the available schedules and find a time that works best for you.",
+            "Puedes elegir entre los horarios disponibles y encontrar uno que se adapte mejor a ti.",
         },
         {
           number: "5",
-          title: "What materials will I need?",
+          title: "¿Qué materiales necesito?",
           description:
-            "You will only need a device with internet access and a willingness to practice and learn.",
+            "Solo necesitas un dispositivo con acceso a internet y disposición para practicar y aprender.",
         },
         {
           number: "6",
-          title: "How can I book a class?",
+          title: "¿Cómo puedo agendar una clase?",
           description:
-            "You can book a class by choosing an available schedule and completing the booking process.",
+            "Puedes agendar una clase eligiendo un horario disponible y completando el proceso de reservación.",
         },
       ],
+
       motivation: {
-        title: "The goal isn't perfect English. It's confident English.",
+        title:
+          "El objetivo no es hablar inglés perfecto, sino hablarlo con confianza.",
         description:
-          "Through meaningful practice and personalized guidance, you'll develop the skills and confidence to communicate more naturally.",
+          "Mediante la práctica significativa y la orientación personalizada, desarrollarás las habilidades y la confianza necesarias para comunicarte de forma más natural.",
       },
     },
+
     motivation: {
-      title: "Your English journey starts here.",
+      title: "Tu camino hacia el inglés comienza aquí.",
       description:
-        "With personalized guidance and meaningful practice, each class brings you one step closer to communicating with confidence. ",
+        "Con orientación personalizada y práctica significativa, cada clase te acerca un paso más a comunicarte con confianza.",
     },
   },
 };
