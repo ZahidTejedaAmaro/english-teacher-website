@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import typography from "../../../styles/typography.module.css";
+
 import SectionHeader from "../Home/SectionHeader/SectionHeader";
 import CTA from "../CTA/CTA";
 
